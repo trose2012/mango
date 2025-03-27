@@ -12,6 +12,7 @@
           Ruh roh! I need JavaScript to run. If you don't want to enable it and
           are scared of technology, you can visit the
           <a
+            class="underline"
             href="http://aqjeignx5ussinaa64hq3s2phleke6jmworiqe2tmlh4kctklyq6pjqd.onion"
             >onion site</a
           >
