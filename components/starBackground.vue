@@ -1,0 +1,43 @@
+<script setup>
+import { onMounted, onBeforeUnmount } from "vue";
+
+let cleanup = null;
+onMounted(async () => {
+  const bg = await import("../assets/js/background.js");
+
+  if (bg.default && typeof bg.default === "function") {
+    cleanup = bg.default();
+  } else if (bg.init && typeof bg.init === "function") {
+    cleanup = bg.init();
+  }
+});
+
+onBeforeUnmount(() => {
+  if (typeof cleanup === "function") {
+    cleanup();
+  }
+  if (window) {
+    window.removeEventListener("resize", window.onWindowResize);
+    document.removeEventListener("mousemove", window.onDocumentMouseMove);
+    document.removeEventListener("touchstart", window.onDocumentTouchStart);
+    document.removeEventListener("touchmove", window.onDocumentTouchMove);
+  }
+});
+</script>
+
+<template>
+  <div id="irhhui" />
+</template>
+
+<style scoped>
+#irhhui {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: black;
+  pointer-events: none;
+}
+</style>
