@@ -30,6 +30,27 @@ const m = [
   "Laundering money...",
   "Making up a random excuse...",
   "Centering a div...",
+  "Working on updates 99%...",
+  "Don't turn off your PC. This will take a while...",
+  "Testing your patience...",
+  "Adjusting the space-time continuum...",
+  "Minting your dox to the blockchain...",
+  "Pulling up to the function...",
+  "Taking a mindfulness minute...",
+  "You are number 28434714 in the queue...",
+  "99 bottles of beer on the wall..",
+  "One mississippi, two mississippi...",
+  "Ensuring Gnomes are still short...",
+  "Quiting vim...",
+  "Adding more :3...",
+  "Pressing ALT+F4...",
+  "Mixing the coins...",
+  "Fleeing to a third-world country...",
+  "Running from the feds...",
+  "Noticing the fake jays...",
+  "Stealing the handle...",
+  "You have been placed in a queue, awaiting forwarding to the platform...", // dread reference
+  "Your estimated wait time is 600 minutes...",
 ];
 const rm = ref(m[0]);
 onMounted(() => {
