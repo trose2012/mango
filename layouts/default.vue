@@ -4,14 +4,18 @@
     content="http://aqjeignx5ussinaa64hq3s2phleke6jmworiqe2tmlh4kctklyq6pjqd.onion"
   />
   <div>
-    <!-- Error message for users without JavaScript -->
     <noscript>
       <div
         class="fixed inset-0 bg-black z-51 flex flex-col justify-center items-center"
       >
         <p class="text-red-500 text-xl text-center p-4">
-          This site requires JavaScript to function properly. Please enable
-          JavaScript in your browser settings.
+          Ruh roh! I need JavaScript to run. If you don't want to enable it and
+          are scared of technology, you can visit the
+          <a
+            href="http://aqjeignx5ussinaa64hq3s2phleke6jmworiqe2tmlh4kctklyq6pjqd.onion"
+            >onion site</a
+          >
+          instead.
         </p>
       </div>
     </noscript>
