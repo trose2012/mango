@@ -2,10 +2,9 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   app: {
     head: {
+      title: "3kh0.net",
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
-      "onion-location":
-        "http://aqjeignx5ussinaa64hq3s2phleke6jmworiqe2tmlh4kctklyq6pjqd.onion",
       htmlAttrs: {
         lang: "en",
       },

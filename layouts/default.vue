@@ -1,4 +1,8 @@
 <template>
+  <meta
+    http-equiv="onion-location"
+    content="http://aqjeignx5ussinaa64hq3s2phleke6jmworiqe2tmlh4kctklyq6pjqd.onion"
+  />
   <div>
     <div
       v-if="a"
