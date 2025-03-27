@@ -8,19 +8,27 @@
       <div
         class="fixed inset-0 bg-black z-51 flex flex-col justify-center items-center"
       >
-        <p class="text-red-500 text-xl text-center p-4">
-          Ruh roh! I need JavaScript to run. If you don't want to enable it and
-          are scared of technology, you can visit the
+        <img
+          src="~/assets/media/cry.png"
+          alt="No JS"
+          class="w-32 h-32 object-contain"
+        />
+        <p class="text-red-500 text-xl text-center p-4 max-w-2xl font-semibold">
+          Aww dang it! It seems like you have JavaScript disabled. Please enable
+          it as I got a bunch of cool features that need it.
+        </p>
+        <p class="text-white text-xl text-center p-4 max-w-2xl">
+          If you are looking for a more simple and secure experience, you can
+          visit the
           <a
             class="underline"
             href="http://aqjeignx5ussinaa64hq3s2phleke6jmworiqe2tmlh4kctklyq6pjqd.onion"
-            >onion site</a
+            >hidden service version</a
           >
           instead.
         </p>
       </div>
     </noscript>
-
     <!-- Loader -->
     <div
       class="fixed inset-0 bg-black z-50 flex flex-col justify-center items-center o duration-500"
