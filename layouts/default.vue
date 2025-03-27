@@ -44,6 +44,18 @@
 </template>
 
 <script setup>
+useHead({
+  htmlAttrs: {
+    lang: "en",
+  },
+  link: [
+    {
+      rel: "icon",
+      type: "image/png",
+      href: "/favicon.png",
+    },
+  ],
+});
 const a = ref(true);
 const b = ref(false);
 const m = [

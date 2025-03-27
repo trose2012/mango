@@ -12,11 +12,11 @@
         v-if="expanded"
         class="absolute left-0 m-0 top-1/2 transform -translate-y-1/2 w-10 h-10 overflow-hidden transition-all duration-500"
       >
-        <img
+        <NuxtImg
           :src="`/music/${currentSong.src.replace('.mp3', '.png')}`"
           :alt="currentSong.title"
           class="w-full h-full object-cover rounded-full shadow-md spin"
-        />
+        ></NuxtImg>
       </div>
 
       <!-- Play/Pause Button for collapsed state -->
@@ -115,14 +115,13 @@
       ref="audioPlayer"
       :src="`/music/${currentSong.src}`"
       @ended="playNext"
+      volume="0.3"
       @canplaythrough="canPlay = true"
     ></audio>
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onBeforeUnmount, nextTick } from "vue";
-
 const songs = [
   { title: "fauxx - enby", src: "music1.mp3" },
   { title: "snuffles - too late", src: "music2.mp3" },
@@ -142,23 +141,17 @@ const songs = [
   { title: "juno - hero", src: "music16.mp3" },
 ];
 
-// State variables
 const expanded = ref(false);
 const isPlaying = ref(false);
 const audioPlayer = ref(null);
 const canPlay = ref(false);
 
-// Fix for hydration mismatch: use client-only selection of random song
-const currentIndex = ref(0); // Default to first song for SSR
+const currentIndex = ref(0); // fix ssr error
 const currentSong = computed(() => songs[currentIndex.value]);
-
-// Generate random song index only on client side
 onMounted(() => {
-  // Set random song index only after component is mounted (client-side only)
   currentIndex.value = Math.floor(Math.random() * songs.length);
-
-  // Preload the current audio file
   audioPlayer.value.load();
+  audioPlayer.value.volume = 0.3;
 });
 
 const togglePlay = async () => {
@@ -177,16 +170,18 @@ const togglePlay = async () => {
       isPlaying.value = true;
     } catch (err) {
       console.error("Error playing audio:", err);
-      isPlaying.value = false; // Ensure the state reflects the failure
+      isPlaying.value = false; // kill
     }
   }
 };
 
 const toggleExpandAndPlay = async () => {
+  console.log("toggleExpandAndPlay");
   expanded.value = true;
-  await nextTick(); // Wait for DOM updates
-
+  await nextTick(); // wait for next
   if (!canPlay.value) {
+    console.log("audio not ready???");
+    playNext(); // fuck you we move on
     const waitForAudioReady = new Promise((resolve) => {
       const onCanPlayThrough = () => {
         canPlay.value = true;
@@ -198,11 +193,11 @@ const toggleExpandAndPlay = async () => {
       };
       audioPlayer.value.addEventListener("canplaythrough", onCanPlayThrough);
     });
-
     await waitForAudioReady;
   }
 
   try {
+    console.log("play");
     await audioPlayer.value.play();
     isPlaying.value = true;
   } catch (err) {
@@ -224,7 +219,6 @@ const playNext = () => {
 };
 
 onBeforeUnmount(() => {
-  // Clean up audio when component is destroyed
   if (audioPlayer.value) {
     audioPlayer.value.pause();
     audioPlayer.value.src = "";
@@ -233,8 +227,7 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-/* spinning animation for album cover */
-@keyframes spin {
+@keyframes a {
   0% {
     transform: rotate(0deg);
   }
@@ -242,8 +235,7 @@ onBeforeUnmount(() => {
     transform: rotate(360deg);
   }
 }
-
 .spin {
-  animation: spin 10s linear infinite;
+  animation: a 10s linear infinite;
 }
 </style>

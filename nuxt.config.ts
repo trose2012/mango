@@ -16,4 +16,9 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  modules: ["@nuxt/image", "@nuxtjs/robots"],
+  robots: {
+    blockNonSeoBots: true,
+    blockAiBots: true,
+  },
 });
