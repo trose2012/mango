@@ -1,16 +1,16 @@
 <template>
   <div
     class="fixed bottom-6 right-6 z-40 transition-all duration-500 ease-in-out"
-    :class="{ 'w-72 h-16': expanded, 'w-12 h-12': !expanded }"
+    :class="{ 'w-72': expanded, 'w-12': !expanded }"
   >
     <div
-      class="bg-zinc-900 rounded-full shadow-lg overflow-hidden transition-all duration-500 ease-in-out flex items-center"
-      :class="{ 'pl-12 pr-4 py-3': expanded, 'p-2': !expanded }"
+      class="bg-zinc-900 rounded-full shadow-lg p-2 m-0 relative overflow-hidden transition-all duration-500"
+      :class="{ 'pl-12 pr-4 py-3': expanded }"
     >
       <!-- Album Cover -->
       <div
         v-if="expanded"
-        class="absolute left-0 top-1/2 transform -translate-y-1/2 w-10 h-10 overflow-hidden transition-all duration-500"
+        class="absolute left-0 m-0 top-1/2 transform -translate-y-1/2 w-10 h-10 overflow-hidden transition-all duration-500"
       >
         <img
           :src="`/music/${currentSong.src.replace('.mp3', '.png')}`"
@@ -23,7 +23,7 @@
       <button
         v-if="!expanded"
         @click="toggleExpandAndPlay"
-        class="w-8 h-8 flex items-center justify-center text-white rounded-full hover:text-green-400 transition-colors"
+        class="w-8 h-8 flex items-center justify-center text-white rounded-full hover:text-green-400 transition-colors p-0 m-0"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -40,11 +40,13 @@
       </button>
 
       <!-- Music controls for expanded state -->
-      <div v-if="expanded" class="flex items-center justify-between w-full">
+      <div v-if="expanded" class="flex items-center justify-between">
         <!-- Song Title -->
-        <div class="flex-1 min-w-0 overflow-hidden">
-          <div class="text-white text-sm truncate">
-            {{ currentSong.title }}
+        <div class="flex-1 min-w-0 overflow-hidden m-0 p-0">
+          <div class="overflow-hidden whitespace-nowrap">
+            <div class="text-white text-sm truncate">
+              {{ currentSong.title }}
+            </div>
           </div>
         </div>
 
