@@ -4,8 +4,20 @@
     content="http://aqjeignx5ussinaa64hq3s2phleke6jmworiqe2tmlh4kctklyq6pjqd.onion"
   />
   <div>
+    <!-- Error message for users without JavaScript -->
+    <noscript>
+      <div
+        class="fixed inset-0 bg-black z-51 flex flex-col justify-center items-center"
+      >
+        <p class="text-red-500 text-xl text-center p-4">
+          This site requires JavaScript to function properly. Please enable
+          JavaScript in your browser settings.
+        </p>
+      </div>
+    </noscript>
+
+    <!-- Loader -->
     <div
-      v-if="a"
       class="fixed inset-0 bg-black z-50 flex flex-col justify-center items-center o duration-500"
       :class="{ 'opacity-0': b, 'opacity-0 hidden': !a }"
     >
@@ -19,6 +31,7 @@
         {{ rm }}
       </p>
     </div>
+
     <slot />
     <StarBackground />
     <MusicBox />
@@ -57,7 +70,10 @@ const m = [
   "Your estimated wait time is 600 minutes...",
 ];
 const rm = ref(m[0]);
+
 onMounted(() => {
+  a.value = true; // Show the loader only when JavaScript is enabled
+
   const i = setInterval(() => {
     const ri = Math.floor(Math.random() * m.length);
     rm.value = m[ri];
@@ -74,6 +90,7 @@ onMounted(() => {
       window.addEventListener("load", resolve);
     }
   });
+
   Promise.all([c, d]).then(() => {
     b.value = true;
     clearInterval(i);
@@ -84,6 +101,7 @@ onMounted(() => {
   });
 });
 </script>
+
 <style scoped>
 .o {
   transition: opacity 0.5s ease-in-out;
