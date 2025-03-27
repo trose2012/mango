@@ -41,7 +41,6 @@
 
       <!-- Music controls for expanded state -->
       <div v-if="expanded" class="flex items-center justify-between">
-        <!-- Song Title -->
         <div class="flex-1 min-w-0 overflow-hidden m-0 p-0">
           <div class="overflow-hidden whitespace-nowrap">
             <div class="text-white text-sm truncate">
@@ -162,32 +161,55 @@ onMounted(() => {
   audioPlayer.value.load();
 });
 
-const togglePlay = () => {
+const togglePlay = async () => {
+  console.log("togglePlay");
   if (!canPlay.value) return;
-
+  console.log("canPlay");
   if (isPlaying.value) {
+    console.log("pause");
     audioPlayer.value.pause();
     isPlaying.value = false;
     expanded.value = false;
   } else {
-    audioPlayer.value.play().catch((err) => {
+    console.log("play");
+    try {
+      await audioPlayer.value.play();
+      isPlaying.value = true;
+    } catch (err) {
       console.error("Error playing audio:", err);
-    });
-    isPlaying.value = true;
+      isPlaying.value = false; // Ensure the state reflects the failure
+    }
   }
 };
 
-const toggleExpandAndPlay = () => {
+const toggleExpandAndPlay = async () => {
   expanded.value = true;
-  nextTick(() => {
-    // Start playing
-    if (canPlay.value) {
-      audioPlayer.value.play().catch((err) => {
-        console.error("Error playing audio:", err);
-      });
-      isPlaying.value = true;
-    }
-  });
+  await nextTick(); // Wait for DOM updates
+
+  if (!canPlay.value) {
+    const waitForAudioReady = new Promise((resolve) => {
+      const onCanPlayThrough = () => {
+        canPlay.value = true;
+        audioPlayer.value.removeEventListener(
+          "canplaythrough",
+          onCanPlayThrough
+        );
+        resolve();
+      };
+      audioPlayer.value.addEventListener("canplaythrough", onCanPlayThrough);
+    });
+
+    await waitForAudioReady;
+  }
+
+  try {
+    await audioPlayer.value.play();
+    isPlaying.value = true;
+  } catch (err) {
+    console.error(err);
+    isPlaying.value = false;
+    expanded.value = false;
+  }
 };
 
 const playNext = () => {
