@@ -214,6 +214,8 @@ const toggleExpandAndPlay = async () => {
 
 const playNext = () => {
   console.log("playing next");
+  // make sure we play the audio if not playing already
+  audioPlayer.value.play();
   currentIndex.value = (currentIndex.value + 1) % songs.length;
   nextTick(() => {
     if (isPlaying.value && canPlay.value) {
