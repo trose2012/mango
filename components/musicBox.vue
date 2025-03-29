@@ -152,12 +152,16 @@ onMounted(() => {
   currentIndex.value = Math.floor(Math.random() * songs.length);
   audioPlayer.value.load();
   audioPlayer.value.volume = 0.3;
+  console.log("currentSong", currentSong.value);
+  console.log("audioPlayer", audioPlayer.value);
+  console.log("canPlay", canPlay.value);
 });
 
 const togglePlay = async () => {
   console.log("togglePlay");
-  if (!canPlay.value) return;
-  console.log("canPlay");
+  if (!canPlay.value) {
+    console.log("audio not ready???");
+  }
   if (isPlaying.value) {
     console.log("pause");
     audioPlayer.value.pause();
@@ -173,6 +177,7 @@ const togglePlay = async () => {
       isPlaying.value = false; // kill
     }
   }
+  console.log("isPlaying", isPlaying.value);
 };
 
 const toggleExpandAndPlay = async () => {
@@ -208,11 +213,12 @@ const toggleExpandAndPlay = async () => {
 };
 
 const playNext = () => {
+  console.log("playing next");
   currentIndex.value = (currentIndex.value + 1) % songs.length;
   nextTick(() => {
     if (isPlaying.value && canPlay.value) {
       audioPlayer.value.play().catch((err) => {
-        console.error("Error playing audio:", err);
+        console.error(err);
       });
     }
   });
@@ -220,6 +226,7 @@ const playNext = () => {
 
 onBeforeUnmount(() => {
   if (audioPlayer.value) {
+    console.log("unmounting");
     audioPlayer.value.pause();
     audioPlayer.value.src = "";
   }
