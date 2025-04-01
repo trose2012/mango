@@ -94,6 +94,9 @@ const m = [
   "Stealing the handle...",
   "You have been placed in a queue, awaiting forwarding to the platform...", // dread reference
   "Your estimated wait time is 600 minutes...",
+  "Finding the meaning of life...",
+  "Pushing this stupid rock up a hill...",
+  "Spreading the woke mind virus...",
 ];
 const rm = ref(m[0]);
 
@@ -134,7 +137,7 @@ onMounted(() => {
 }
 
 .p {
-  animation: p 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation: p 0.7s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 @keyframes p {
