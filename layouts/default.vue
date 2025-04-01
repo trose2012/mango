@@ -29,12 +29,10 @@
         </p>
       </div>
     </noscript>
-    <!-- Loader -->
     <div
       class="fixed inset-0 bg-black z-50 flex flex-col justify-center items-center o duration-500"
       :class="{ 'opacity-0': b, 'opacity-0 hidden': !a }"
     >
-      <!--eslint-disable-next-line vue/html-self-closing-->
       <img
         src="~/assets/media/sock.gif"
         alt="Loading..."
@@ -44,8 +42,11 @@
         {{ rm }}
       </p>
     </div>
+    <Header />
 
-    <slot />
+    <div class="flex flex-col items-center justify-center min-h-screen">
+      <slot />
+    </div>
     <StarBackground />
     <MusicBox />
   </div>
