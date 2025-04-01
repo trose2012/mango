@@ -152,9 +152,6 @@ onMounted(() => {
   currentIndex.value = Math.floor(Math.random() * songs.length);
   audioPlayer.value.load();
   audioPlayer.value.volume = 0.3;
-  console.log("currentSong", currentSong.value);
-  console.log("audioPlayer", audioPlayer.value);
-  console.log("canPlay", canPlay.value);
 });
 
 const togglePlay = async () => {
@@ -230,7 +227,6 @@ const playNext = () => {
 
 onBeforeUnmount(() => {
   if (audioPlayer.value) {
-    console.log("unmounting");
     audioPlayer.value.pause();
     audioPlayer.value.src = "";
   }
