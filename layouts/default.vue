@@ -60,13 +60,14 @@ useHead({
   link: [
     {
       rel: "icon",
-      type: "image/png",
-      href: "/favicon.png",
+      type: "image/x-icon",
+      href: "/favicon.ico",
     },
   ],
 });
-const a = ref(true);
-const b = ref(false);
+
+const a = ref(true); // Controls the visibility of the loader
+const b = ref(false); // Controls the opacity of the loader
 const m = [
   "Stealing your information...",
   "Hacking into the mainframe...",
@@ -81,7 +82,7 @@ const m = [
   "Pulling up to the function...",
   "Taking a mindfulness minute...",
   "You are number 28434714 in the queue...",
-  "99 bottles of beer on the wall..",
+  "99 bottles of beer on the wall...",
   "One mississippi, two mississippi...",
   "Ensuring Gnomes are still short...",
   "Quiting vim...",
@@ -97,17 +98,31 @@ const m = [
   "Finding the meaning of life...",
   "Pushing this stupid rock up a hill...",
   "Spreading the woke mind virus...",
+  "Thinking...",
 ];
+
+// Start with a random message instead of always the first one
+const getRandomMessage = () => {
+  const randomIndex = Math.floor(Math.random() * m.length);
+  return m[randomIndex];
+};
+
+// Initialize with the first message for SSR
 const rm = ref(m[0]);
+const intervalId = ref(null);
+
+// Only run on client-side
+onBeforeMount(() => {
+  // Set a random message immediately when component mounts on client
+  rm.value = getRandomMessage();
+
+  // Start the interval
+  intervalId.value = setInterval(() => {
+    rm.value = getRandomMessage();
+  }, 1000);
+});
 
 onMounted(() => {
-  a.value = true; // Show the loader only when JavaScript is enabled
-
-  const i = setInterval(() => {
-    const ri = Math.floor(Math.random() * m.length);
-    rm.value = m[ri];
-  }, 1000);
-
   const c = new Promise((resolve) => {
     setTimeout(resolve, 1500);
   });
@@ -121,13 +136,26 @@ onMounted(() => {
   });
 
   Promise.all([c, d]).then(() => {
-    b.value = true;
-    clearInterval(i);
+    b.value = true; // Fade out the loader
+
+    // Clear the interval when the page is loaded
+    if (intervalId.value) {
+      clearInterval(intervalId.value);
+      intervalId.value = null;
+    }
 
     setTimeout(() => {
-      a.value = false;
+      a.value = false; // Hide the loader completely
     }, 500);
   });
+});
+
+// Make sure to clean up the interval if the component is unmounted
+onBeforeUnmount(() => {
+  if (intervalId.value) {
+    clearInterval(intervalId.value);
+    intervalId.value = null;
+  }
 });
 </script>
 
