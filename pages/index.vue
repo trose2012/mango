@@ -14,14 +14,16 @@
             class="flex flex-col md:flex-row items-center justify-between gap-8"
           >
             <div
-              class="text-center md:text-left flex flex-col justify-center h-full space-y-6"
+              class="text-center md:text-left flex flex-col justify-center h-full space-y-6 md:flex-1"
             >
               <h1
                 class="text-5xl md:text-6xl font-bold text-green-400 [text-shadow:0_0_10px_rgba(34,197,94,0.8)]"
               >
                 Heyo, I am Echo!
               </h1>
-              <p class="text-xl leading-relaxed text-white max-w-xl">
+              <p
+                class="text-xl leading-relaxed text-white max-w-xl mx-auto md:mx-0"
+              >
                 I am a 16 year old software developer, hacker, furry,
                 cybersecurity enthusiast, and privacy activist. I like to make
                 cool things, help out others, obsess over privacy, and
@@ -77,13 +79,15 @@
             <div
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
-              <h3 class="text-xl font-semibold mb-3 text-green-400">
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
                 <img
                   src="/svg/front.svg"
                   alt="Front"
-                  class="h-6 w-6 inline-block mr-1"
+                  class="h-6 w-6 mr-2 flex-shrink-0"
                 />
-                Frontend
+                <span>Frontend</span>
               </h3>
               <p class="text-white">
                 I am a front-end software developer by trade, so I know my way
@@ -109,13 +113,15 @@
             <div
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
-              <h3 class="text-xl font-semibold mb-3 text-green-400">
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
                 <img
                   src="/svg/back.svg"
                   alt="Back"
-                  class="h-6 w-6 inline-block mr-1"
+                  class="h-6 w-6 mr-2 flex-shrink-0"
                 />
-                Backend
+                <span>Backend</span>
               </h3>
               <p class="text-white">
                 Backend development is not my strong suit, but I still know how
@@ -145,13 +151,15 @@
             <div
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
-              <h3 class="text-xl font-semibold mb-3 text-green-400">
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
                 <img
                   src="/svg/csgo.svg"
                   alt="CS:GO"
-                  class="h-6 w-6 inline-block mr-1"
+                  class="h-6 w-6 mr-2 flex-shrink-0"
                 />
-                Counter-Strike
+                <span>Counter-Strike</span>
               </h3>
               <p class="text-white">
                 My favorite game by far. I sometimes mess with the source engine
@@ -173,13 +181,15 @@
             <div
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
-              <h3 class="text-xl font-semibold mb-3 text-green-400">
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
                 <img
                   src="/svg/security.svg"
                   alt="Shield"
-                  class="h-6 w-6 inline-block mr-1"
+                  class="h-6 w-6 mr-2 flex-shrink-0"
                 />
-                Sysadmin + Infosec
+                <span>Sysadmin + Infosec</span>
               </h3>
               <p class="text-white">
                 I also have experience with managing
@@ -236,13 +246,15 @@
           <div
             class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 mb-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
           >
-            <h3 class="text-xl font-semibold mb-4 text-green-400">
+            <h3
+              class="text-xl font-semibold mb-4 text-green-400 flex items-center"
+            >
               <img
                 src="/svg/heart.svg"
                 alt="Heart"
-                class="h-6 w-6 inline-block mr-1"
+                class="h-6 w-6 mr-2 flex-shrink-0"
               />
-              Giving back
+              <span>Giving back</span>
             </h3>
             <p class="text-white mb-4">
               I am fortunate to be able to do what I love, so I like to give
@@ -311,13 +323,15 @@
             <div
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
-              <h3 class="text-xl font-semibold mb-3 text-green-400">
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
                 <img
                   src="/svg/tail.svg"
                   alt="Fox tail"
-                  class="h-6 w-6 inline-block mr-1"
+                  class="h-6 w-6 mr-2 flex-shrink-0"
                 />
-                Ooo fluffy!
+                <span>Ooo fluffy!</span>
               </h3>
               <p class="text-white">
                 I also happen to be a furry! I know, yet another person in tech
@@ -335,13 +349,15 @@
             <div
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
-              <h3 class="text-xl font-semibold mb-3 text-green-400">
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
                 <img
                   src="/svg/pencil.svg"
                   alt="Pencil"
-                  class="h-6 w-6 inline-block mr-1"
+                  class="h-6 w-6 mr-2 flex-shrink-0"
                 />
-                Certified yapper
+                <span>Certified yapper</span>
               </h3>
               <p class="text-white">
                 I recently started a blog to share my thoughts and ideas with
@@ -360,13 +376,15 @@
             <div
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
-              <h3 class="text-xl font-semibold mb-3 text-green-400">
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
                 <img
                   src="/svg/lang.svg"
                   alt="Languages"
-                  class="h-6 w-6 inline-block mr-1"
+                  class="h-6 w-6 mr-2 flex-shrink-0"
                 />
-                你好! / Привет!
+                <span>你好! / Привет!</span>
               </h3>
               <p class="text-white">
                 I also speak a few languages. I am fluent in English and
@@ -379,13 +397,15 @@
             <div
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
-              <h3 class="text-xl font-semibold mb-3 text-green-400">
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
                 <img
                   src="/svg/coin.svg"
                   alt="Coin"
-                  class="h-6 w-6 inline-block mr-1"
+                  class="h-6 w-6 mr-2 flex-shrink-0"
                 />
-                Cryptocurrency trader
+                <span>Cryptocurrency trader</span>
               </h3>
               <p class="text-white">
                 Back when
@@ -412,13 +432,15 @@
             <div
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
-              <h3 class="text-xl font-semibold mb-3 text-green-400">
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
                 <img
                   src="/svg/hc.svg"
                   alt="Hack Club"
-                  class="h-6 w-6 inline-block mr-1"
+                  class="h-6 w-6 mr-2 flex-shrink-0"
                 />
-                Hack Clubber
+                <span>Hack Clubber</span>
               </h3>
               <p class="text-white">
                 I am proud to be a member of
@@ -441,13 +463,15 @@
             <div
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
-              <h3 class="text-xl font-semibold mb-3 text-green-400">
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
                 <img
                   src="/svg/steam.svg"
                   alt="Steam"
-                  class="h-6 w-6 inline-block mr-1"
+                  class="h-6 w-6 mr-2 flex-shrink-0"
                 />
-                Steam afficionado
+                <span>Steam afficionado</span>
               </h3>
               <p class="text-white">
                 I also play other games besides Counter-Strike. I have a
