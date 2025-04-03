@@ -14,7 +14,9 @@
             class="flex flex-col md:flex-row items-center justify-between gap-8"
           >
             <div class="text-center md:text-left">
-              <h1 class="text-5xl md:text-6xl font-bold text-green-400 mb-6">
+              <h1
+                class="text-5xl md:text-6xl font-bold text-green-400 mb-6 [text-shadow:0_0_10px_rgba(34,197,94,0.8)]"
+              >
                 Heyo, I am Echo!
               </h1>
               <p class="text-xl leading-relaxed text-white max-w-xl">
@@ -64,7 +66,9 @@
         <div
           class="bg-transparent backdrop-blur-[3px] rounded-2xl border border-green-500/20 shadow-xl p-8 w-full transition-all duration-300"
         >
-          <h1 class="mb-8 text-4xl font-bold text-center text-green-400">
+          <h1
+            class="mb-8 text-4xl font-bold text-center text-green-400 [text-shadow:0_0_10px_rgba(34,197,94,0.8)]"
+          >
             Things I Can Do
           </h1>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -200,7 +204,9 @@
         <div
           class="bg-transparent backdrop-blur-[3px] rounded-2xl border border-green-500/20 shadow-xl p-8 w-full transition-all duration-300"
         >
-          <h1 class="text-4xl font-bold mb-8 text-center text-green-400">
+          <h1
+            class="text-4xl font-bold mb-8 text-center text-green-400 [text-shadow:0_0_10px_rgba(34,197,94,0.8)]"
+          >
             Other Cool Things
           </h1>
           <div
@@ -412,11 +418,13 @@
       </section>
 
       <!-- Final Section - Normal flow -->
-      <section id="final" class="py-16">
+      <section id="final" class="py-16 mb-60">
         <div
           class="bg-transparent backdrop-blur-[3px] rounded-2xl border border-green-500/20 shadow-xl p-8 w-full transition-all duration-300"
         >
-          <h1 class="text-4xl font-bold mb-8 text-center text-green-400">
+          <h1
+            class="text-4xl font-bold mb-8 text-center text-green-400 [text-shadow:0_0_10px_rgba(34,197,94,0.8)]"
+          >
             Is That All?
           </h1>
           <p class="text-xl text-center text-white mb-12">
@@ -426,26 +434,9 @@
           <div class="flex justify-center">
             <NuxtLink
               to="/projects"
-              class="relative inline-flex items-center px-8 py-4 bg-black/60 rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-0.5 hover:no-underline group"
+              class="relative inline-flex items-center px-8 py-4 rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-0.5 hover:no-underline border-green-500/40 border-1 hover:border-green-500"
             >
-              <span
-                class="absolute -inset-0.5 bg-gradient-to-r from-green-600 to-cyan-500 rounded-lg blur opacity-40 transition-opacity duration-300 group-hover:opacity-80 group-hover:animate-pulse z-[-1]"
-              ></span>
               <span class="text-white">View My Projects</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 ml-2 transform transition-transform duration-200 group-hover:translate-x-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
-              </svg>
             </NuxtLink>
           </div>
         </div>
@@ -510,9 +501,5 @@ onMounted(() => {
   50% {
     opacity: 0.8;
   }
-}
-
-.group:hover .group-hover\:animate-pulse {
-  animation: pulse 1.5s infinite;
 }
 </style>
