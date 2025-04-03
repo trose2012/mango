@@ -1,19 +1,21 @@
 <template>
   <div class="text-white min-h-screen">
     <!-- Main content container -->
-    <div class="max-w-4xl mx-auto px-4">
+    <div class="max-w-6xl mx-auto px-4">
       <!-- Hero Section - Full height -->
       <section
         id="intro"
         class="min-h-screen flex flex-col items-center justify-center py-16"
       >
-        <div class="backdrop-card w-full">
+        <div
+          class="bg-transparent backdrop-blur-[3px] rounded-2xl border border-green-500/20 shadow-xl p-8 w-full transition-all duration-300"
+        >
           <div
             class="flex flex-col md:flex-row items-center justify-between gap-8"
           >
             <div class="text-center md:text-left">
               <h1 class="text-5xl md:text-6xl font-bold text-green-400 mb-6">
-                Hi, I am Echo!
+                Heyo, I am Echo!
               </h1>
               <p class="text-xl leading-relaxed text-white max-w-xl">
                 I am a 16 year old software developer, hacker, furry,
@@ -24,7 +26,7 @@
             </div>
             <div class="relative">
               <div
-                class="absolute -inset-2 bg-green-500 rounded-full blur opacity-50"
+                class="absolute -inset-1 bg-green-500 rounded-full blur opacity-50"
               ></div>
               <NuxtImg
                 src="https://wsrv.nl/?url=extra.3kh0.net/img/art/xmr_hoodie.png?bust&w=200&h=200&fit=cover&output=png"
@@ -36,7 +38,7 @@
           <div class="mt-12 text-center">
             <button
               @click="scrollToSkills"
-              class="animate-bounce bg-opacity-20 hover:bg-opacity-30 rounded-full p-3 transition-all duration-300 cursor-pointer"
+              class="animate-bounce bg-white/5 hover:bg-white/10 rounded-full p-3 transition-all duration-300 cursor-pointer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,12 +61,16 @@
 
       <!-- Skills Section - Normal flow -->
       <section id="skills" class="py-16">
-        <div class="backdrop-card w-full">
+        <div
+          class="bg-transparent backdrop-blur-[3px] rounded-2xl border border-green-500/20 shadow-xl p-8 w-full transition-all duration-300"
+        >
           <h1 class="mb-8 text-4xl font-bold text-center text-green-400">
             Things I Can Do
           </h1>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="skill-card">
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
+            >
               <h3 class="text-xl font-semibold mb-3 text-green-400">
                 Frontend
               </h3>
@@ -74,49 +80,53 @@
                 tooling such as
                 <a
                   href="https://vuejs.org/"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >Vue.js</a
                 >,
                 <a
                   href="https://tailwindcss.com/"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >TailwindCSS</a
                 >, and
                 <a
                   href="https://nuxt.com/"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >Nuxt</a
                 >.
               </p>
             </div>
-            <div class="skill-card">
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
+            >
               <h3 class="text-xl font-semibold mb-3 text-green-400">Backend</h3>
               <p class="text-white">
                 Backend development is not my strong suit, but I still know how
                 to use things like
                 <a
                   href="https://nodejs.org"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >node.js</a
                 >,
                 <a
                   href="https://expressjs.com/"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >Express</a
                 >,
                 <a
                   href="https://supabase.com/"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >Supabase</a
                 >,
                 <a
                   href="https://mongodb.com/"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >MongoDB</a
                 >, and a few other lesser-known technologies.
               </p>
             </div>
-            <div class="skill-card">
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
+            >
               <h3 class="text-xl font-semibold mb-3 text-green-400">
                 Counter-Strike
               </h3>
@@ -125,19 +135,21 @@
                 and
                 <a
                   href="https://sourcemod.net/"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >SourceMod</a
                 >
                 making mods and plugins for
                 <a
                   href="https://steamdb.info/app/730/"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >Counter-Strike</a
                 >. Most of these are just for fun, so don't expect them to be
                 public any time soon.
               </p>
             </div>
-            <div class="skill-card">
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
+            >
               <h3 class="text-xl font-semibold mb-3 text-green-400">
                 Sysadmin + Infosec
               </h3>
@@ -145,36 +157,36 @@
                 I also have experience with managing
                 <a
                   href="https://status.3kh0.net/status/3kh0"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >a bunch of servers</a
                 >
                 and setting up things like
                 <a
                   href="https://nginx.org/"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >nginx</a
                 >,
                 <a
                   href="https://www.haproxy.org/"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >HAProxy</a
                 >
                 and
                 <a
                   href="https://squid-cache.org/"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >Squid</a
                 >. Cybersecurity and exploit hunting are fields I am working on
                 with one exploit report in
                 <a
                   href="https://www.coinbase.com"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >Coinbase</a
                 >
                 with
                 <a
                   href="https://hackerone.com/3kh0"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >HackerOne</a
                 >.
               </p>
@@ -185,11 +197,15 @@
 
       <!-- Privacy Section - Normal flow -->
       <section id="privacy" class="py-16">
-        <div class="backdrop-card w-full">
+        <div
+          class="bg-transparent backdrop-blur-[3px] rounded-2xl border border-green-500/20 shadow-xl p-8 w-full transition-all duration-300"
+        >
           <h1 class="text-4xl font-bold mb-8 text-center text-green-400">
             Other Cool Things
           </h1>
-          <div class="inner-card mb-8">
+          <div
+            class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 mb-8 transition-all duration-300 hover:bg-black/50 hover:border-green-500/30"
+          >
             <h3 class="text-xl font-semibold mb-4 text-green-400">
               Giving back
             </h3>
@@ -200,27 +216,49 @@
               these organizations include:
             </p>
             <div class="flex flex-wrap gap-3 mb-4">
-              <a href="https://signal.org" class="badge-link"
+              <a
+                href="https://signal.org"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
                 >Signal Foundation</a
               >
-              <a href="https://www.accessnow.org/" class="badge-link"
+              <a
+                href="https://www.accessnow.org/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
                 >AccessNow</a
               >
-              <a href="https://eff.org/" class="badge-link"
+              <a
+                href="https://eff.org/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
                 >Electronic Frontier Foundation</a
               >
-              <a href="https://torproject.org/" class="badge-link"
+              <a
+                href="https://torproject.org/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
                 >Tor Project</a
               >
-              <a href="https://riseup.net/" class="badge-link">Riseup</a>
-              <a href="https://tails.net/" class="badge-link">TailsOS</a>
-              <a href="https://ccs.getmonero.org/" class="badge-link"
+              <a
+                href="https://riseup.net/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
+                >Riseup</a
+              >
+              <a
+                href="https://tails.net/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
+                >TailsOS</a
+              >
+              <a
+                href="https://ccs.getmonero.org/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
                 >Monero Project</a
               >
-              <a href="https://www.amnesty.org/en/tech/" class="badge-link"
+              <a
+                href="https://www.amnesty.org/en/tech/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
                 >Amnesty International</a
               >
-              <a href="https://fightforthefuture.org/" class="badge-link"
+              <a
+                href="https://fightforthefuture.org/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
                 >Fight for the Future</a
               >
             </div>
@@ -229,68 +267,120 @@
               I donate to
               <a
                 href="https://github.com/3kh0?tab=sponsoring"
-                class="text-green-400 hover:underline"
+                class="text-green-400 hover:underline transition-all duration-200"
                 >developers that contribute valuable software to the world</a
               >!
             </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="inner-card h-full">
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:bg-black/50 hover:border-green-500/30"
+            >
               <h3 class="text-xl font-semibold mb-3 text-green-400">
                 Ooo fluffy!
               </h3>
               <p class="text-white">
-                I also happen to be a furry! I know, how original. My fursona is
-                a silly little fox boy with three tails. If you'd like to learn
-                more and see art of him, check out my
+                I also happen to be a furry! I know, yet another person in tech
+                who is a furry, how original. My fursona is a silly little fox
+                boy with three to five tails (random to keep it spicy!) If you'd
+                like to learn more and see art of him by amazing human artists,
+                check out my
                 <a
                   href="https://extra.3kh0.net/fursona"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >fursona page</a
                 >!
               </p>
             </div>
-            <div class="inner-card h-full">
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:bg-black/50 hover:border-green-500/30"
+            >
               <h3 class="text-xl font-semibold mb-3 text-green-400">
-                Writings
+                Certified yapper
               </h3>
               <p class="text-white">
-                I also have a blog where I post about random things that
-                interest me. You can check it out at
+                I recently started a blog to share my thoughts and ideas with
+                the world. I write about a variety of topics including
+                technology, politics, personal experiences, and whatever else
+                comes to mind. If you are interested in reading my blog, you can
+                find it at
                 <a
                   href="https://blog.3kh0.net"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >blog.3kh0.net</a
-                >.
+                >
+                RSS included!
               </p>
             </div>
-            <div class="inner-card h-full">
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:bg-black/50 hover:border-green-500/30"
+            >
               <h3 class="text-xl font-semibold mb-3 text-green-400">
-                P2P Trading
+                你好! / Привет!
+              </h3>
+              <p class="text-white">
+                I also speak a few languages. I am fluent in English and
+                conversational in Chinese and Russian. More so in Chinese, as I
+                have my family to thank for that. I have picked up basic Russian
+                from friends and and Counter-Strike which is only the more
+                "colorful" side, but a language is a language.
+              </p>
+            </div>
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:bg-black/50 hover:border-green-500/30"
+            >
+              <h3 class="text-xl font-semibold mb-3 text-green-400">
+                Cryptocurrency trader
               </h3>
               <p class="text-white">
                 Back when
                 <a
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   href="https://localmonero.co/"
                   >LocalMonero</a
                 >
                 was a thing, I used to trade Monero. I have since moved to
                 <a
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   href="https://localcoinswap.com/"
                   >LocalCoinSwap</a
                 >
                 and I pride myself in offering competitive rates and best in
                 class service, as shown by
                 <a
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   href="https://localcoinswap.com/profile/3kh0_"
                   >my 5 star rating with over $24,000 traded.</a
                 >
               </p>
             </div>
-            <div class="inner-card h-full">
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:bg-black/50 hover:border-green-500/30"
+            >
+              <h3 class="text-xl font-semibold mb-3 text-green-400">
+                Hack Clubber
+              </h3>
+              <p class="text-white">
+                I am proud to be a member of
+                <a
+                  href="https://hackclub.com/"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >Hack Club</a
+                >, a global network of high school hackers and makers. I am
+                happy to have met many amazing people and learned a lot from
+                them and I have to thank them for the unintended levels of
+                motivation they have given me. If you are on the Slack,
+                <a
+                  href="https://hackclub.slack.com/team/U080A3QP42C"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >shoot me a message!</a
+                >
+              </p>
+            </div>
+
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:bg-black/50 hover:border-green-500/30"
+            >
               <h3 class="text-xl font-semibold mb-3 text-green-400">
                 Steam afficionado
               </h3>
@@ -298,20 +388,20 @@
                 I also play other games besides Counter-Strike. I have a
                 <a
                   href="https://steamcommunity.com/id/3kh0_/"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >Steam account</a
                 >
                 with just shy of 800 games and enough hours to shatter reality.
                 Then I have a
                 <a
                   href="https://steamcommunity.com/id/haha-im-in-your-url-bar"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >dedicated account</a
                 >
                 for Counter-Strike where I have clocked in many hours and hold
                 <a
                   href="https://steamcommunity.com/id/haha-im-in-your-url-bar/inventory/#730"
-                  class="text-green-400 hover:underline"
+                  class="text-green-400 hover:underline transition-all duration-200"
                   >about $2,359 USD worth of skins</a
                 >
                 at the time of writing
@@ -323,7 +413,9 @@
 
       <!-- Final Section - Normal flow -->
       <section id="final" class="py-16">
-        <div class="backdrop-card w-full">
+        <div
+          class="bg-transparent backdrop-blur-[3px] rounded-2xl border border-green-500/20 shadow-xl p-8 w-full transition-all duration-300"
+        >
           <h1 class="text-4xl font-bold mb-8 text-center text-green-400">
             Is That All?
           </h1>
@@ -332,11 +424,17 @@
             this fancy button below to see my other projects
           </p>
           <div class="flex justify-center">
-            <NuxtLink to="/projects" class="glow-button">
+            <NuxtLink
+              to="/projects"
+              class="relative inline-flex items-center px-8 py-4 bg-black/60 rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-0.5 hover:no-underline group"
+            >
+              <span
+                class="absolute -inset-0.5 bg-gradient-to-r from-green-600 to-cyan-500 rounded-lg blur opacity-40 transition-opacity duration-300 group-hover:opacity-80 group-hover:animate-pulse z-[-1]"
+              ></span>
               <span class="text-white">View My Projects</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-200"
+                class="h-5 w-5 ml-2 transform transition-transform duration-200 group-hover:translate-x-1"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -381,7 +479,7 @@ onMounted(() => {
 
   // Observe all section cards
   document
-    .querySelectorAll(".backdrop-card, .skill-card, .inner-card")
+    .querySelectorAll(".bg-black\\/70, .bg-black\\/40")
     .forEach((card) => {
       observer.observe(card);
     });
@@ -389,119 +487,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* Base styles */
-.backdrop-card {
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(3px);
-  border-radius: 1rem;
-  border: 1px solid rgba(22, 163, 74, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-  padding: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill-card {
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(3px);
-  border-radius: 0.75rem;
-  border: 1px solid rgba(22, 163, 74, 0.15);
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-  height: 100%;
-}
-
-.skill-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(22, 163, 74, 0.3);
-}
-
-.inner-card {
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(3px);
-  border-radius: 0.75rem;
-  border: 1px solid rgba(22, 163, 74, 0.15);
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-}
-
-.inner-card:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(22, 163, 74, 0.3);
-}
-
-.badge-link {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(22, 163, 74, 0.2);
-  border-radius: 9999px;
-  color: white;
-  font-size: 0.875rem;
-  transition: all 0.2s ease;
-}
-
-.badge-link:hover {
-  background-color: rgba(22, 163, 74, 0.2);
-  text-decoration: none;
-}
-
-.glow-button {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 0.5rem;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.glow-button::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(45deg, #4ade80, #06b6d4);
-  border-radius: 0.6rem;
-  z-index: -1;
-  opacity: 0.4;
-  transition: opacity 0.3s ease;
-}
-
-.glow-button:hover {
-  transform: translateY(-2px);
-  text-decoration: none;
-}
-
-.glow-button:hover::before {
-  opacity: 0.8;
-  animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 0.8;
-  }
-}
-
-a {
-  transition: all 0.2s ease;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Animation for elements coming into view */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -515,5 +500,19 @@ a:hover {
 
 .fade-in-up {
   animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.group:hover .group-hover\:animate-pulse {
+  animation: pulse 1.5s infinite;
 }
 </style>
