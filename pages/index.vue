@@ -357,8 +357,6 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
-
 // Smooth scroll to skills section
 const scrollToSkills = () => {
   const skillsSection = document.getElementById("skills");

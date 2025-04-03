@@ -42,9 +42,9 @@
         {{ rm }}
       </p>
     </div>
-    <Header />
+    <Header class="z-2" />
 
-    <div class="flex flex-col items-center justify-center min-h-screen">
+    <div class="flex flex-col items-center justify-center min-h-screen z-1">
       <slot />
     </div>
     <StarBackground />
