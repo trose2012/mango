@@ -69,6 +69,7 @@ useHead({
 const a = ref(true); // Controls the visibility of the loader
 const b = ref(false); // Controls the opacity of the loader
 const m = [
+  "You have been placed in a queue, awaiting forwarding to the platform...", // dread reference
   "Stealing your information...",
   "Hacking into the mainframe...",
   "Laundering money...",
@@ -93,7 +94,6 @@ const m = [
   "Running from the feds...",
   "Noticing the fake jays...",
   "Stealing the handle...",
-  "You have been placed in a queue, awaiting forwarding to the platform...", // dread reference
   "Your estimated wait time is 600 minutes...",
   "Finding the meaning of life...",
   "Pushing this stupid rock up a hill...",
