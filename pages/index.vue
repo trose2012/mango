@@ -34,8 +34,8 @@
               <div
                 class="absolute -inset-1 bg-green-500 rounded-full blur opacity-50"
               ></div>
-              <NuxtImg
-                src="https://wsrv.nl/?url=extra.3kh0.net/img/art/xmr_hoodie.png?bust&w=300&h=300&fit=cover&output=png"
+              <img
+                src="~/assets/media/splash.png"
                 alt="Echo's Avatar"
                 class="relative w-64 h-64 rounded-full border-5 border-green-500 border-opacity-30 object-cover"
               />

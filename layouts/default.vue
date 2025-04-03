@@ -30,7 +30,7 @@
       </div>
     </noscript>
     <div
-      class="fixed inset-0 bg-black z-50 flex flex-col justify-center items-center o duration-500"
+      class="fixed inset-0 bg-black z-99 flex flex-col justify-center items-center o duration-500"
       :class="{ 'opacity-0': b, 'opacity-0 hidden': !a }"
     >
       <img
