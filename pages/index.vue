@@ -13,9 +13,11 @@
           <div
             class="flex flex-col md:flex-row items-center justify-between gap-8"
           >
-            <div class="text-center md:text-left">
+            <div
+              class="text-center md:text-left flex flex-col justify-center h-full space-y-6"
+            >
               <h1
-                class="text-5xl md:text-6xl font-bold text-green-400 mb-6 [text-shadow:0_0_10px_rgba(34,197,94,0.8)]"
+                class="text-5xl md:text-6xl font-bold text-green-400 [text-shadow:0_0_10px_rgba(34,197,94,0.8)]"
               >
                 Heyo, I am Echo!
               </h1>
@@ -31,9 +33,9 @@
                 class="absolute -inset-1 bg-green-500 rounded-full blur opacity-50"
               ></div>
               <NuxtImg
-                src="https://wsrv.nl/?url=extra.3kh0.net/img/art/xmr_hoodie.png?bust&w=200&h=200&fit=cover&output=png"
+                src="https://wsrv.nl/?url=extra.3kh0.net/img/art/xmr_hoodie.png?bust&w=300&h=300&fit=cover&output=png"
                 alt="Echo's Avatar"
-                class="relative w-48 h-48 rounded-full border-5 border-green-500 border-opacity-30 object-cover"
+                class="relative w-64 h-64 rounded-full border-5 border-green-500 border-opacity-30 object-cover"
               />
             </div>
           </div>
@@ -181,7 +183,7 @@
                   class="text-green-400 hover:underline transition-all duration-200"
                   >Squid</a
                 >. Cybersecurity and exploit hunting are fields I am working on
-                with one exploit report in
+                getting into. I have a reported a vulnerability to
                 <a
                   href="https://www.coinbase.com"
                   class="text-green-400 hover:underline transition-all duration-200"
