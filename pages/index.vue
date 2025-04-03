@@ -78,6 +78,11 @@
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
               <h3 class="text-xl font-semibold mb-3 text-green-400">
+                <img
+                  src="/svg/front.svg"
+                  alt="Front"
+                  class="h-6 w-6 inline-block mr-1"
+                />
                 Frontend
               </h3>
               <p class="text-white">
@@ -104,7 +109,14 @@
             <div
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
-              <h3 class="text-xl font-semibold mb-3 text-green-400">Backend</h3>
+              <h3 class="text-xl font-semibold mb-3 text-green-400">
+                <img
+                  src="/svg/back.svg"
+                  alt="Back"
+                  class="h-6 w-6 inline-block mr-1"
+                />
+                Backend
+              </h3>
               <p class="text-white">
                 Backend development is not my strong suit, but I still know how
                 to use things like
@@ -134,6 +146,11 @@
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
               <h3 class="text-xl font-semibold mb-3 text-green-400">
+                <img
+                  src="/svg/csgo.svg"
+                  alt="CS:GO"
+                  class="h-6 w-6 inline-block mr-1"
+                />
                 Counter-Strike
               </h3>
               <p class="text-white">
@@ -157,6 +174,11 @@
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
               <h3 class="text-xl font-semibold mb-3 text-green-400">
+                <img
+                  src="/svg/security.svg"
+                  alt="Shield"
+                  class="h-6 w-6 inline-block mr-1"
+                />
                 Sysadmin + Infosec
               </h3>
               <p class="text-white">
@@ -212,9 +234,14 @@
             Other Cool Things
           </h1>
           <div
-            class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 mb-8 transition-all duration-300 hover:bg-black/50 hover:border-green-500/30"
+            class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 mb-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
           >
             <h3 class="text-xl font-semibold mb-4 text-green-400">
+              <img
+                src="/svg/heart.svg"
+                alt="Heart"
+                class="h-6 w-6 inline-block mr-1"
+              />
               Giving back
             </h3>
             <p class="text-white mb-4">
@@ -282,9 +309,14 @@
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div
-              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:bg-black/50 hover:border-green-500/30"
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
               <h3 class="text-xl font-semibold mb-3 text-green-400">
+                <img
+                  src="/svg/tail.svg"
+                  alt="Fox tail"
+                  class="h-6 w-6 inline-block mr-1"
+                />
                 Ooo fluffy!
               </h3>
               <p class="text-white">
@@ -301,9 +333,14 @@
               </p>
             </div>
             <div
-              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:bg-black/50 hover:border-green-500/30"
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
               <h3 class="text-xl font-semibold mb-3 text-green-400">
+                <img
+                  src="/svg/pencil.svg"
+                  alt="Pencil"
+                  class="h-6 w-6 inline-block mr-1"
+                />
                 Certified yapper
               </h3>
               <p class="text-white">
@@ -321,9 +358,14 @@
               </p>
             </div>
             <div
-              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:bg-black/50 hover:border-green-500/30"
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
               <h3 class="text-xl font-semibold mb-3 text-green-400">
+                <img
+                  src="/svg/lang.svg"
+                  alt="Languages"
+                  class="h-6 w-6 inline-block mr-1"
+                />
                 你好! / Привет!
               </h3>
               <p class="text-white">
@@ -335,9 +377,14 @@
               </p>
             </div>
             <div
-              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:bg-black/50 hover:border-green-500/30"
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
               <h3 class="text-xl font-semibold mb-3 text-green-400">
+                <img
+                  src="/svg/coin.svg"
+                  alt="Coin"
+                  class="h-6 w-6 inline-block mr-1"
+                />
                 Cryptocurrency trader
               </h3>
               <p class="text-white">
@@ -363,9 +410,14 @@
               </p>
             </div>
             <div
-              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:bg-black/50 hover:border-green-500/30"
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
               <h3 class="text-xl font-semibold mb-3 text-green-400">
+                <img
+                  src="/svg/hc.svg"
+                  alt="Hack Club"
+                  class="h-6 w-6 inline-block mr-1"
+                />
                 Hack Clubber
               </h3>
               <p class="text-white">
@@ -387,9 +439,14 @@
             </div>
 
             <div
-              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:bg-black/50 hover:border-green-500/30"
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
               <h3 class="text-xl font-semibold mb-3 text-green-400">
+                <img
+                  src="/svg/steam.svg"
+                  alt="Steam"
+                  class="h-6 w-6 inline-block mr-1"
+                />
                 Steam afficionado
               </h3>
               <p class="text-white">
