@@ -587,7 +587,8 @@ onMounted(() => {
 }
 
 img[src^="/svg/"] {
-  filter: invert(73%) sepia(91%) saturate(1352%) hue-rotate(95deg)
-    brightness(92%) contrast(87%);
+  filter: invert(67%) sepia(79%) saturate(2341%) hue-rotate(106deg)
+    brightness(96%) contrast(101%);
+  /* This filter approximates #05df72 */
 }
 </style>
