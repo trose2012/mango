@@ -7,17 +7,17 @@
         <h1
           class="text-5xl md:text-6xl font-bold text-green-400 my-8 text-center [text-shadow:0_0_10px_rgba(34,197,94,0.8)]"
         >
-          My Projects
+          Cool stuff I made
         </h1>
-        <p class="text-xl text-center text-white mb-12">
+        <p class="text-xl text-center text-white mb-12 max-w-2xl mx-auto">
           Here are some of the projects I've worked on! This is not all of them,
           but these are the projects I'm actually willing to show off
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           <div
-            v-for="project in projects"
-            :key="project.id"
+            v-for="(project, index) in projects"
+            :key="index"
             class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
           >
             <div class="relative aspect-video overflow-hidden">
@@ -54,8 +54,8 @@
 
               <div class="mt-4 flex gap-2">
                 <a
-                  v-if="project.github"
-                  :href="project.github"
+                  v-if="project.git"
+                  :href="project.git"
                   class="flex-1 text-center px-4 py-2 bg-green-500/20 rounded-md text-white hover:bg-green-500/30 transition-all duration-200"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -68,11 +68,11 @@
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M12 2C6.48 2 2 6.48 2 12C2 16.42 5.08 20.12 9.2 21.62C9.8 21.72 10 21.34 10 21C10 20.68 10 19.96 10 19.12C7 19.68 6.4 17.62 6.4 17.62C5.92 16.48 5.28 16.12 5.28 16.12C4.4 15.48 5.36 15.48 5.36 15.48C6.32 15.56 6.88 16.62 6.88 16.62C7.72 18.18 9.28 17.68 10.04 17.34C10.12 16.68 10.44 16.18 10.72 15.92C8.4 15.68 6 14.8 6 11C6 9.84 6.4 8.92 7.04 8.2C6.96 7.88 6.6 6.8 7.16 5.44C7.16 5.44 8 5.12 10 6.44C10.96 6.16 12 6.04 13.04 6.04C14.08 6.04 15.12 6.16 16.08 6.44C18.08 5.12 18.92 5.44 18.92 5.44C19.48 6.8 19.12 7.88 19.04 8.2C19.6 8.92 20.08 9.84 20.08 11C20.08 14.8 17.68 15.6 15.36 15.92C15.76 16.24 16.08 16.92 16.08 17.92C16.08 19.4 16.08 20.6 16.08 21.04C16.08 21.44 16.28 21.8 16.88 21.64C21 20.12 24.08 16.42 24.08 12C24 6.48 19.6 2 12 2Z"
                         fill="currentColor"
+                        d="M2.6 10.59L8.38 4.8l1.69 1.7c-.24.85.15 1.78.93 2.23v5.54c-.6.34-1 .99-1 1.73a2 2 0 0 0 2 2a2 2 0 0 0 2-2c0-.74-.4-1.39-1-1.73V9.41l2.07 2.09c-.07.15-.07.32-.07.5a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2c-.18 0-.35 0-.5.07L13.93 7.5a1.98 1.98 0 0 0-1.15-2.34c-.43-.16-.88-.2-1.28-.09L9.8 3.38l.79-.78c.78-.79 2.04-.79 2.82 0l7.99 7.99c.79.78.79 2.04 0 2.82l-7.99 7.99c-.78.79-2.04.79-2.82 0L2.6 13.41c-.79-.78-.79-2.04 0-2.82"
                       />
                     </svg>
-                    GitHub
+                    Git Repo
                   </span>
                 </a>
 
@@ -110,31 +110,48 @@
 <script setup>
 const projects = [
   {
-    id: 1,
-    name: "example thing",
-    image: "/img/2025_04_03_016_Kleki.png",
-    description: "yap yap yap description yap yap yap yap yap yap yap yap yap",
-    tech: ["JavaScript", "HTML", "CSS", "Vue"],
-    github: "https://github.com/3kh0/website-v4",
-    demo: "https://example.com",
+    name: "HCBScan",
+    image: "/img/b23f69dc-9345-46e8-a1b2-abc6321b4bc3.png",
+    description:
+      "HCBScan is an open-source explorer for HCB that allows you to search for organizations, view transactions, and explore public financial data.",
+    tech: ["JavaScript", "Vue", "Supabase"],
+    git: "https://github.com/3kh0/hcbscan",
+    demo: "https://hcbscan.3kh0.net/app",
   },
   {
-    id: 2,
-    name: "example thing",
-    image: "/img/2025_04_03_016_Kleki.png",
-    description: "yap yap yap description yap yap yap yap yap yap yap yap yap",
-    tech: ["JavaScript", "Vue", "Supabase"],
-    github: "https://github.com/3kh0/hcbscan",
+    name: "3kh0 Games",
+    image: "/img/0f7af44a-7951-4ad4-8d98-232d1d5c57c1.png",
+    description:
+      "A online gaming website that allowed people to play games in their Chromebooks in school, lasted 2 years and was a huge success.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    git: "https://codeberg.org/3kh0/website-v4/",
+  },
+  {
+    name: "3kh0 Lite",
+    image: "/img/fd3401c3-88b1-4e33-a1cf-aed47ef7cbb6.png",
+    description:
+      "A lightweight version of 3kh0 Games, designed to be a spiritual successor to the original. It retains the core features but is much cleaner.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    git: "https://github.com/3kh0/3kh0-lite",
+    demo: "https://lite.3kh0.net/",
+  },
+  {
+    name: "Oxide",
+    image: "/img/55073d6a-ac98-4187-8fec-518fcc034a07.png",
+    description:
+      "No tracking, no useless stuff, just a dead simple proxy - Built as a joke submission for the Titanium Network Proxathon 2024",
+    tech: ["JavaScript", "HTML"],
+    git: "https://github.com/3kh0/Oxide",
     demo: null,
   },
   {
-    id: 3,
-    name: "example thing",
-    image: "/img/2025_04_03_016_Kleki.png",
-    description: "yap yap yap description yap yap yap yap yap yap yap yap yap",
-    tech: ["Vue", "Nuxt", "TailwindCSS"],
-    github: null,
-    demo: "https://example.com",
+    name: "Echodown",
+    image: "/img/dd81eb68-3ec1-40ac-8fec-88bd872e3801.png",
+    description:
+      "Fake DDoS attack tool that makes it look like you're performing a DDoS attack on a website, but it's just a harmless prank.",
+    tech: ["Python"],
+    git: "https://github.com/3kh0/echodown",
+    demo: null,
   },
 ];
 

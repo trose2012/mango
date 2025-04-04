@@ -469,7 +469,7 @@
                 <img
                   src="/svg/steam.svg"
                   alt="Steam"
-                  class="h-6 w-6 mr-2 flex-shrink-0"
+                  class="h-6 w-6 mr-2 text-green-400"
                 />
                 <span>Steam afficionado</span>
               </h3>
@@ -584,5 +584,10 @@ onMounted(() => {
   50% {
     opacity: 0.8;
   }
+}
+
+img[src^="/svg/"] {
+  filter: invert(73%) sepia(91%) saturate(1352%) hue-rotate(95deg)
+    brightness(92%) contrast(87%);
 }
 </style>
