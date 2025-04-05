@@ -38,7 +38,7 @@
         alt="Loading..."
         class="w-32 h-32 object-contain"
       />
-      <p class="text-white mt-4 text-xl p">
+      <p class="text-white mt-4 text-xl p text-center p-4">
         {{ rm }}
       </p>
     </div>
