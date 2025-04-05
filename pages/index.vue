@@ -1,14 +1,12 @@
 <template>
   <div class="text-white min-h-screen">
-    <!-- Main content container -->
     <div class="max-w-6xl mx-auto px-4">
-      <!-- Hero Section - Full height -->
       <section
         id="intro"
         class="min-h-screen flex flex-col items-center justify-center py-16"
       >
         <div
-          class="bg-transparent backdrop-blur-[3px] rounded-2xl border border-green-500/20 shadow-xl p-8 w-full transition-all duration-300"
+          class="bg-transparent backdrop-blur-[3px] rounded-2xl border border-green-500/20 shadow-xl p-8 w-full transition-all duration-300 slide"
         >
           <div
             class="flex flex-col md:flex-row items-center justify-between gap-8"
@@ -36,14 +34,14 @@
               ></div>
               <img
                 src="~/assets/media/splash.png"
-                alt="Echo's Avatar"
+                alt="echo profile picture"
                 class="relative w-64 h-64 rounded-full border-5 border-green-500 border-opacity-30 object-cover"
               />
             </div>
           </div>
           <div class="mt-12 text-center">
             <button
-              @click="scrollToSkills"
+              @click="downTwo"
               class="animate-bounce bg-white/5 hover:bg-white/10 rounded-full p-3 transition-all duration-300 cursor-pointer"
             >
               <svg
@@ -65,7 +63,6 @@
         </div>
       </section>
 
-      <!-- Skills Section - Normal flow -->
       <section id="skills" class="py-16">
         <div
           class="bg-transparent backdrop-blur-[3px] rounded-2xl border border-green-500/20 shadow-xl p-8 w-full transition-all duration-300"
@@ -233,7 +230,6 @@
         </div>
       </section>
 
-      <!-- Privacy Section - Normal flow -->
       <section id="privacy" class="py-16">
         <div
           class="bg-transparent backdrop-blur-[3px] rounded-2xl border border-green-500/20 shadow-xl p-8 w-full transition-all duration-300"
@@ -500,7 +496,6 @@
         </div>
       </section>
 
-      <!-- Final Section - Normal flow -->
       <section id="final" class="py-16 mb-60">
         <div
           class="bg-transparent backdrop-blur-[3px] rounded-2xl border border-green-500/20 shadow-xl p-8 w-full transition-all duration-300"
@@ -529,29 +524,29 @@
 </template>
 
 <script setup>
-// Smooth scroll to skills section
-const scrollToSkills = () => {
-  const skillsSection = document.getElementById("skills");
-  if (skillsSection) {
-    skillsSection.scrollIntoView({ behavior: "smooth" });
+const downTwo = () => {
+  const skills = document.getElementById("skills");
+  if (skills) {
+    skills.scrollIntoView({ behavior: "smooth" });
   }
 };
 
-// Add a subtle parallax effect on scroll
 onMounted(() => {
-  // Optional: Add scroll animations for elements coming into view
+  setTimeout(() => {
+    document.querySelector(".slide").classList.add("slide-done");
+  }, 10);
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("fade-in-up");
+          entry.target.classList.add("fade");
         }
       });
     },
     { threshold: 0.1 }
   );
 
-  // Observe all section cards
   document
     .querySelectorAll(".bg-black\\/70, .bg-black\\/40")
     .forEach((card) => {
@@ -561,7 +556,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-@keyframes fadeInUp {
+@keyframes a {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -572,23 +567,24 @@ onMounted(() => {
   }
 }
 
-.fade-in-up {
-  animation: fadeInUp 0.6s ease forwards;
+.fade {
+  animation: a 0.6s ease forwards;
 }
 
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 0.8;
-  }
+.slide {
+  opacity: 0;
+  transform: translateY(50px);
+  will-change: transform, opacity;
+}
+
+.slide-done {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
 }
 
 img[src^="/svg/"] {
   filter: brightness(0) saturate(100%) invert(64%) sepia(21%) saturate(4291%)
     hue-rotate(103deg) brightness(102%) contrast(96%);
-  /* This filter approximates #05df72 */
 }
 </style>
