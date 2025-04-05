@@ -49,6 +49,8 @@
     </div>
     <StarBackground />
     <MusicBox />
+
+    <Footer />
   </div>
 </template>
 
