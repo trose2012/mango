@@ -18,7 +18,7 @@ gpg --keyserver hkps://keys.openpgp.org --recv-keys D03F4CD9007FD242F9850DDB5049
 
 You can also find it on https://3kh0.net/pgp.txt
 
-Today is April 6th, 2025.
+Today is April 5th, 2025.
 Lastest Monero Block hash (height): 10e93d656a001b89a1facc0d31e0fabc05d0654235bf8fa55945472e46f4b3fd (3383553)
 
 I will reverify this message within the next 90 days.
@@ -30,17 +30,17 @@ gpg --verify canary.txt
 It should return with "Good signature" proving this message is valid and not tampered with.
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEE0D9M2QB/0kL5hQ3bUElOLdHoh9EFAmfxbJQACgkQUElOLdHo
-h9Fq9RAAs0CWAvssR6+yPg3t47vsqBR0vguZbjkFX0GbTDbHGsc0uMzYSBxBbXuD
-n/ev0dQMUqWiCoGT5fw7WGsGMdgM+obWNUIKViV2LyZ+ndM7ageOU5Hjx6vWVlTD
-u8JnPnrfhX1C8HJxuUxT770I8dQ26R4va1+6s+90D7JbPW/lq+EnmH0WAZIFxEGW
-n4ryDCj6NVq4J5LT4g9oxQA/qgcqKmQhI6/VnsaCigpcQb09XcCm+9Tksoa4pI6x
-nheQmfcXdHF/wHsggmhgeAIpDZTl1ik0tihwCZ1Q3s0pEi52/PTWlXb6+aJLesc4
-JNQIt1QArLcdSzSZ8fvDd+7t3N1XWvaoZ6fE9AirDgmLS6LPEnjJpF/kfcgffkUA
-+hj6EstiXhBWG2X0dipCLTssJrcqZmSrHBMU9nSZwFlV1p6KnM+MOnk/d0G04aNg
-v5M1aZ6wZudC/0vmK2Dahy6sRwow3x3tLIvYPyJMuFWCjbyVbRdtfUwivdsxfLpI
-bneXiz2FDtZ92NkleF+eWXl5Lvb9/OJY25sG/qzLZXTFe703eWhwo6RftDZ/apnb
-2KcOGEj9PNHiTiNnW4iKAreKwLO8F/Ul1Kvq0/02jhk7nbDSEzxbdMmumObsOtzv
-Fq8UsLP5q/cIcOjR2X71Hq3/WEmBhbFR3IU++kOh/cT5ru5oK9A=
-=Dt7H
+iQIzBAEBCgAdFiEE0D9M2QB/0kL5hQ3bUElOLdHoh9EFAmfxbNAACgkQUElOLdHo
+h9HMMw/+O4JR6hBN1WeT7hfF5CIR+s/8f0OcqqqhJgt+K0zsQ+4yiEOYTLqa4NNB
+D7t/motQkz9W0YdcXtIuY2UgSoafzkA2vTz2vJJuJcNAALQPeDxk8lf0Cg/ENuRg
+sEx+n8iZVcQ8S2TLX/Qn78WREZpxfM1yerc+NT/hrwgDUoiJPbFhB4Z0cUaXBTU5
+Wv8Um2bTSsNt0VNNQV5ewdDQ/WNO60lk4wY/iv43JX/tH5HSdo4g0JJn9j6E/Lut
+bw3H+hL+Ts6Tgzw1r8k4OEhocAlKhcV9W7XZ5jndrz5czHjHsX8wiWKO7rGozDse
+BFwDuCSgG2CUYzd4WrQj6FQn3WcX4HUkN40obnzPnzLqhoRd8a+gP0Oolpt6IZhO
+vnKhx9wNmM9YcgJUSW78HUxHh1baTjuvEUOq/8ju12lRVNLiHVVIx53JW7g4pndU
+l95Vd9auzP6tQyhtyUswLf4lrNiwS2xeczXnoMWpIcX1UriEXIaDnkoAD0xL2JJK
+p2Fijdwrla5SMLP7xLtSQ5HvSUKLCwyhIqLYVIWeRvaPtaMXIWkloTERKS1lhUyc
+CRWVQ3fL9QjaCzOkGuDftrCuOgk84ZTORCMFmUC/oEp6vKsQmxc1AQ9OBEvJqW59
+8XkL8a6yr6leK9YPU+5yE24gh0S1yEZcJr+rgaJacdnMNqUTOck=
+=Bg/8
 -----END PGP SIGNATURE-----
