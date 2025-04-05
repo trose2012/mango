@@ -1,8 +1,8 @@
 <template>
   <div class="text-white min-h-screen">
-    <div class="max-w-6xl mx-auto px-4 py-16">
+    <div class="max-w-6xl mx-auto px-4 py-16 w-full">
       <div
-        class="bg-transparent backdrop-blur-[3px] rounded-2xl border border-green-500/20 shadow-xl p-8 w-full transition-all duration-300"
+        class="bg-transparent backdrop-blur-[3px] rounded-2xl border border-green-500/20 shadow-xl p-8 w-full transition-all duration-300 mb-8"
       >
         <h1
           class="text-5xl md:text-6xl font-bold text-green-400 my-8 text-center [text-shadow:0_0_10px_rgba(34,197,94,0.8)]"
@@ -122,7 +122,7 @@ const projects = [
     name: "Echo net extras",
     image: "/img/f4ef3600-f370-4a6a-9313-3f1fbac9a95f.png",
     description:
-      "A collection of random tools that I have created and use somewhat regularly.",
+      "A collection of random tools, utilities, and other things that I have created and use somewhat regularly to make my life easier.",
     tech: ["Nuxt", "Vue", "JavaScript"],
     git: "https://github.com/3kh0/echonet-extra-nuxt",
     demo: "https://extra.3kh0.net",

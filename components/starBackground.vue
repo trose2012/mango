@@ -11,9 +11,7 @@ onMounted(async () => {
 });
 
 onBeforeUnmount(() => {
-  if (typeof cleanup === "function") {
-    cleanup();
-  }
+  cleanup();
   if (window) {
     window.removeEventListener("resize", window.onWindowResize);
     document.removeEventListener("mousemove", window.onDocumentMouseMove);
