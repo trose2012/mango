@@ -119,6 +119,15 @@ const projects = [
     demo: "https://hcbscan.3kh0.net/app",
   },
   {
+    name: "Echo net extras",
+    image: "/img/f4ef3600-f370-4a6a-9313-3f1fbac9a95f.png",
+    description:
+      "A collection of random tools that I have created and use somewhat regularly.",
+    tech: ["Nuxt", "Vue", "JavaScript"],
+    git: "https://github.com/3kh0/echonet-extra-nuxt",
+    demo: "https://extra.3kh0.net",
+  },
+  {
     name: "3kh0 Games",
     image: "/img/0f7af44a-7951-4ad4-8d98-232d1d5c57c1.png",
     description:

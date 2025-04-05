@@ -1,8 +1,8 @@
 <template>
   <div class="text-white min-h-screen">
-    <div class="max-w-6xl mx-auto px-4 py-16">
+    <div class="max-w-6xl mx-auto px-4 py-16 w-full">
       <div
-        class="bg-transparent backdrop-blur-[3px] rounded-2xl border border-green-500/20 shadow-xl p-8 w-full transition-all duration-300"
+        class="bg-transparent backdrop-blur-[3px] rounded-2xl border border-green-500/20 shadow-xl p-8 w-full transition-all duration-300 w"
       >
         <h1
           class="text-5xl md:text-6xl font-bold text-green-400 my-8 text-center [text-shadow:0_0_10px_rgba(34,197,94,0.8)]"
@@ -12,8 +12,8 @@
 
         <p class="text-xl text-center text-white mb-8 max-w-3xl mx-auto">
           This is a list of different places to contact me as well as my other
-          presences on the web. If it is not on this list, either it is not
-          important enough to be here or it is not me.
+          accounts. If it is not on this list, either it is not important enough
+          or it is not me.
         </p>
 
         <!-- Priority Contact Methods -->
@@ -22,7 +22,7 @@
             Preferred Contact Methods
           </h2>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Signal -->
             <a
               href="https://signal.me/#eu/E3ce5K2f8buRX5Sl_I0e2M5pNJJ3VaxESLVm39uuKmFIn4X6eeFDNa4ksuw46w_J"
@@ -56,6 +56,22 @@
               </div>
             </a>
 
+            <a
+              href="https://discord.com/users/1056383394470182922"
+              target="_blank"
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
+            >
+              <img
+                src="/svg/discord.svg"
+                alt="Signal"
+                class="h-10 w-10 mr-4 text-green-400"
+              />
+              <div>
+                <h3 class="text-xl font-medium text-green-400">Discord</h3>
+                <p class="text-gray-300">3kh0</p>
+              </div>
+            </a>
+
             <!-- Email -->
             <a
               href="mailto:hello@3kh0.net"
@@ -77,7 +93,7 @@
 
         <!-- Social Accounts -->
         <h2 class="text-2xl font-semibold text-green-400 mb-6">
-          Find Me Online
+          Stalk Me Online
         </h2>
 
         <div
@@ -266,7 +282,7 @@
 
         <!-- Discord Note -->
         <div
-          class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-red-500/30 p-6 max-w-3xl mx-auto mb-8"
+          class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-red-500/30 p-6 mx-auto"
         >
           <div class="flex items-start">
             <svg
@@ -285,17 +301,12 @@
             </svg>
             <div>
               <h3 class="text-xl font-medium text-red-400 mb-2">
-                Booo Discord
+                Beware of Impersonators
               </h3>
               <p class="text-gray-300 mb-4">
-                I hate Discord and don't want to use it, but if that is the only
-                option, my username is
-                <a
-                  href="https://discord.com/users/1056383394470182922"
-                  class="text-red-400 hover:underline"
-                  target="_blank"
-                  >3kh0</a
-                >
+                If it is not on this list, it is not me. I do not have any other
+                accounts on any platform. If you see an account that looks like
+                mine, it is not me.
               </p>
             </div>
           </div>
@@ -352,8 +363,8 @@ a.bg-black\/40 {
 
 /* Add SVG color styling */
 img[src^="/svg/"] {
-  filter: invert(67%) sepia(79%) saturate(2341%) hue-rotate(106deg)
-    brightness(96%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(64%) sepia(21%) saturate(4291%)
+    hue-rotate(103deg) brightness(102%) contrast(96%);
   /* This filter approximates #05df72 */
 }
 </style>
