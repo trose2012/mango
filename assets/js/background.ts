@@ -53,7 +53,7 @@ export default function init() {
     scene = new THREE.Scene();
     scene.fog = new THREE.FogExp2(fogHex, fogDensity);
 
-    container = document.getElementById("irhhui");
+    container = document.getElementById("1y3g8bgy8103hdj");
     if (!container) {
       container = document.createElement("div");
       container.id = "background";

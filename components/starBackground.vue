@@ -1,9 +1,7 @@
 <script setup>
-import { onMounted, onBeforeUnmount } from "vue";
-
 let cleanup = null;
 onMounted(async () => {
-  const bg = await import("../assets/js/background.js");
+  const bg = await import("../assets/js/background.ts");
 
   if (bg.default && typeof bg.default === "function") {
     cleanup = bg.default();
@@ -26,18 +24,17 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div id="irhhui" />
+  <div
+    id="1y3g8bgy8103hdj"
+    style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: black;
+      pointer-events: none;
+    "
+  />
 </template>
-
-<style scoped>
-#irhhui {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-color: black;
-  pointer-events: none;
-}
-</style>
