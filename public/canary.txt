@@ -1,1 +1,46 @@
-soon
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+I am 3kh0 aka Echo
+
+I own the domain 3kh0.net with these nameservers:
+
+cheryl.ns.cloudflare.com
+houston.ns.cloudflare.com
+
+The FBI has not been here (watch very closely for the removal of this notice)
+
+I am in control of my PGP key with fingerprint: D03F4CD9007FD242F9850DDB50494E2DD1E887D1
+
+You can fetch my key by running:
+
+gpg --keyserver hkps://keys.openpgp.org --recv-keys D03F4CD9007FD242F9850DDB50494E2DD1E887D1
+
+You can also find it on https://3kh0.net/pgp.txt
+
+Today is April 6th, 2025.
+Lastest Monero Block hash (height): 10e93d656a001b89a1facc0d31e0fabc05d0654235bf8fa55945472e46f4b3fd (3383553)
+
+I will reverify this message within the next 90 days.
+This message is signed with my PGP key. You can verify it by running:
+
+gpg --keyserver hkps://keys.openpgp.org --recv-keys D03F4CD9007FD242F9850DDB50494E2DD1E887D1
+gpg --verify canary.txt
+
+It should return with "Good signature" proving this message is valid and not tampered with.
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEE0D9M2QB/0kL5hQ3bUElOLdHoh9EFAmfxbJQACgkQUElOLdHo
+h9Fq9RAAs0CWAvssR6+yPg3t47vsqBR0vguZbjkFX0GbTDbHGsc0uMzYSBxBbXuD
+n/ev0dQMUqWiCoGT5fw7WGsGMdgM+obWNUIKViV2LyZ+ndM7ageOU5Hjx6vWVlTD
+u8JnPnrfhX1C8HJxuUxT770I8dQ26R4va1+6s+90D7JbPW/lq+EnmH0WAZIFxEGW
+n4ryDCj6NVq4J5LT4g9oxQA/qgcqKmQhI6/VnsaCigpcQb09XcCm+9Tksoa4pI6x
+nheQmfcXdHF/wHsggmhgeAIpDZTl1ik0tihwCZ1Q3s0pEi52/PTWlXb6+aJLesc4
+JNQIt1QArLcdSzSZ8fvDd+7t3N1XWvaoZ6fE9AirDgmLS6LPEnjJpF/kfcgffkUA
++hj6EstiXhBWG2X0dipCLTssJrcqZmSrHBMU9nSZwFlV1p6KnM+MOnk/d0G04aNg
+v5M1aZ6wZudC/0vmK2Dahy6sRwow3x3tLIvYPyJMuFWCjbyVbRdtfUwivdsxfLpI
+bneXiz2FDtZ92NkleF+eWXl5Lvb9/OJY25sG/qzLZXTFe703eWhwo6RftDZ/apnb
+2KcOGEj9PNHiTiNnW4iKAreKwLO8F/Ul1Kvq0/02jhk7nbDSEzxbdMmumObsOtzv
+Fq8UsLP5q/cIcOjR2X71Hq3/WEmBhbFR3IU++kOh/cT5ru5oK9A=
+=Dt7H
+-----END PGP SIGNATURE-----
