@@ -421,7 +421,7 @@
                 <a
                   class="text-green-400 hover:underline transition-all duration-200"
                   href="https://localcoinswap.com/profile/3kh0_"
-                  >my 5 star rating with over $24,000 traded</a
+                  >my 5 star rating with over $30,000 traded</a
                 >, when I open my trades, stock is quick to go out.
               </p>
             </div>
