@@ -114,7 +114,7 @@ const projects = [
     image: "/img/b23f69dc-9345-46e8-a1b2-abc6321b4bc3.png",
     description:
       "HCBScan is an open-source explorer for HCB that allows you to search for organizations, view transactions, and explore public financial data.",
-    tech: ["JavaScript", "Vue", "Supabase"],
+    tech: ["JavaScript", "Vue", "Supabase", "TailwindCSS"],
     git: "https://github.com/3kh0/hcbscan",
     demo: "https://hcbscan.3kh0.net/app",
   },
@@ -123,9 +123,18 @@ const projects = [
     image: "/img/f4ef3600-f370-4a6a-9313-3f1fbac9a95f.png",
     description:
       "A collection of random tools, utilities, and other things that I have created and use somewhat regularly to make my life easier.",
-    tech: ["Nuxt", "Vue", "JavaScript"],
+    tech: ["Nuxt", "Vue", "JavaScript", "TailwindCSS"],
     git: "https://github.com/3kh0/echonet-extra-nuxt",
     demo: "https://extra.3kh0.net",
+  },
+  {
+    name: "FileHunt",
+    image: "/img/9afd94f1-892b-407d-86ea-f141377ed2e2.png",
+    description:
+      "Search query builder for finding sensitive files on the web. Using Google Dorks, you are able to find much more.",
+    tech: ["Nextjs", "Typescript", "TailwindCSS"],
+    git: "https://github.com/3kh0/filehunt",
+    demo: "https://filehunt.3kh0.net",
   },
   {
     name: "3kh0 Games",
@@ -134,15 +143,6 @@ const projects = [
       "A online gaming website that allowed people to play games in their Chromebooks in school, lasted 2 years and was a huge success.",
     tech: ["HTML", "CSS", "JavaScript"],
     git: "https://codeberg.org/3kh0/website-v4/",
-  },
-  {
-    name: "3kh0 Lite",
-    image: "/img/fd3401c3-88b1-4e33-a1cf-aed47ef7cbb6.png",
-    description:
-      "A lightweight version of 3kh0 Games, designed to be a spiritual successor to the original. It retains the core features but is much cleaner.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    git: "https://github.com/3kh0/3kh0-lite",
-    demo: "https://lite.3kh0.net/",
   },
   {
     name: "Oxide",
@@ -161,6 +161,15 @@ const projects = [
     tech: ["Python"],
     git: "https://github.com/3kh0/echodown",
     demo: null,
+  },
+  {
+    name: "3kh0 Lite",
+    image: "/img/fd3401c3-88b1-4e33-a1cf-aed47ef7cbb6.png",
+    description:
+      "A lightweight version of 3kh0 Games, designed to be a spiritual successor to the original. It retains the core features but is much cleaner.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    git: "https://github.com/3kh0/3kh0-lite",
+    demo: "https://lite.3kh0.net/",
   },
 ];
 
