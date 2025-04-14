@@ -133,7 +133,6 @@ const songs = [
   { title: "Swaige - GET SILLY!!", src: "music15.mp3" },
   { title: "juno - hero", src: "music16.mp3" },
   { title: "Motorama - Alps", src: "music17.mp3" },
-  { title: "Lime Garden - Distant", src: "music18.mp3" },
   { title: "Timebomb Zone - The Prodigy", src: "music19.mp3" },
   { title: "Ugovhb, EF - WTF 2 (sped up)", src: "music20.mp3" },
   { title: "DJ TWI$T II - Where U From?", src: "music21.mp3" },
