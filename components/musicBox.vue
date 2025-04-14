@@ -7,7 +7,6 @@
       class="bg-zinc-900 rounded-full shadow-lg p-2 m-0 relative overflow-hidden transition-all duration-500"
       :class="{ 'pl-12 pr-4 py-3': expanded }"
     >
-      <!-- Album Cover -->
       <div
         v-if="expanded"
         class="absolute left-0 m-0 top-1/2 transform -translate-y-1/2 w-10 h-10 overflow-hidden transition-all duration-500"
@@ -19,7 +18,6 @@
         ></NuxtImg>
       </div>
 
-      <!-- Play/Pause Button for collapsed state -->
       <button
         v-if="!expanded"
         @click="firstPlay"
@@ -39,7 +37,6 @@
         </svg>
       </button>
 
-      <!-- Music controls for expanded state -->
       <div v-if="expanded" class="flex items-center justify-between">
         <div class="flex-1 min-w-0 overflow-hidden m-0 p-0">
           <div class="overflow-hidden whitespace-nowrap">
@@ -49,9 +46,7 @@
           </div>
         </div>
 
-        <!-- Controls -->
         <div class="flex items-center space-x-2 ml-2">
-          <!-- Pause Button -->
           <button
             v-if="playing"
             @click="play"
@@ -71,7 +66,6 @@
             </svg>
           </button>
 
-          <!-- Play Button -->
           <button
             v-else
             @click="play"
@@ -91,7 +85,6 @@
             </svg>
           </button>
 
-          <!-- Next Button -->
           <button
             @click="skip"
             class="text-white hover:text-green-400 transition-colors"
@@ -139,6 +132,16 @@ const songs = [
   { title: "Never Get Used To People - Life Letters", src: "music14.mp3" },
   { title: "Swaige - GET SILLY!!", src: "music15.mp3" },
   { title: "juno - hero", src: "music16.mp3" },
+  { title: "Motorama - Alps", src: "music17.mp3" },
+  { title: "Lime Garden - Distant", src: "music18.mp3" },
+  { title: "Timebomb Zone - The Prodigy", src: "music19.mp3" },
+  { title: "Ugovhb, EF - WTF 2 (sped up)", src: "music20.mp3" },
+  { title: "DJ TWI$T II - Where U From?", src: "music21.mp3" },
+  { title: "Frizk - Oh Yeah?", src: "music22.mp3" },
+  { title: "GASPXR - RETRY!", src: "music23.mp3" },
+  { title: "Powernerd - Dark Triads", src: "music24.mp3" },
+  { title: "Marzuku - Valley of Fools", src: "music25.mp3" },
+  { title: "KSLV Noh - OVERRIDE", src: "music26.mp3" },
 ];
 
 const expanded = ref(false);
@@ -199,7 +202,6 @@ const firstPlay = async () => {
 };
 
 const skip = () => {
-  // make sure we play the audio if not playing already
   setTimeout(() => {
     player.value.play();
   }, 50);
