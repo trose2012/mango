@@ -20,6 +20,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   vite: {
     plugins: [tailwindcss()],
+    build: {
+      sourcemap: false,
+    },
   },
   modules: ["@nuxt/image", "@nuxtjs/robots"],
   robots: {

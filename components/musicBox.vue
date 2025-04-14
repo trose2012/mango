@@ -189,7 +189,7 @@ const toggleExpandAndPlay = async () => {
         canPlay.value = true;
         audioPlayer.value.removeEventListener(
           "canplaythrough",
-          onCanPlayThrough
+          onCanPlayThrough,
         );
         resolve();
       };

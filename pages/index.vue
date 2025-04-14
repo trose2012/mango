@@ -544,7 +544,7 @@ onMounted(() => {
         }
       });
     },
-    { threshold: 0.1 }
+    { threshold: 0.1 },
   );
 
   document
@@ -580,7 +580,9 @@ onMounted(() => {
 .slide-done {
   opacity: 1;
   transform: translateY(0);
-  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+  transition:
+    transform 0.8s ease-out,
+    opacity 0.8s ease-out;
 }
 
 img[src^="/svg/"] {

@@ -46,7 +46,7 @@ export default function init() {
       fieldOfView,
       aspectRatio,
       nearPlane,
-      farPlane
+      farPlane,
     );
     camera.position.z = cameraZ;
 
@@ -74,7 +74,7 @@ export default function init() {
     const geometry = new THREE.BufferGeometry();
     geometry.setAttribute(
       "position",
-      new THREE.Float32BufferAttribute(positions, 3)
+      new THREE.Float32BufferAttribute(positions, 3),
     );
 
     parameters = [

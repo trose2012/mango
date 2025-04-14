@@ -9,7 +9,9 @@
 <style>
 .page-enter-active,
 .page-leave-active {
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
   @apply backdrop-blur-[3px];
 }
 

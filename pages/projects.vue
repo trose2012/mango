@@ -186,7 +186,7 @@ onMounted(() => {
         }
       });
     },
-    { threshold: 0.1 }
+    { threshold: 0.1 },
   );
 
   // Observe all project cards
