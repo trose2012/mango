@@ -16,14 +16,12 @@
           or it is not me.
         </p>
 
-        <!-- Priority Contact Methods -->
         <div class="mb-12 max-w-3xl mx-auto">
           <h2 class="text-2xl font-semibold text-green-400 mb-6">
             Preferred Contact Methods
           </h2>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Signal -->
             <a
               href="https://signal.me/#eu/E3ce5K2f8buRX5Sl_I0e2M5pNJJ3VaxESLVm39uuKmFIn4X6eeFDNa4ksuw46w_J"
               target="_blank"
@@ -72,7 +70,6 @@
               </div>
             </a>
 
-            <!-- Email -->
             <a
               href="mailto:hello@3kh0.net"
               target="_blank"
@@ -91,7 +88,6 @@
           </div>
         </div>
 
-        <!-- Social Accounts -->
         <h2 class="text-2xl font-semibold text-green-400 mb-6">
           Stalk Me Online
         </h2>
@@ -99,7 +95,6 @@
         <div
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12"
         >
-          <!-- GitHub -->
           <a
             href="https://github.com/3kh0"
             target="_blank"
@@ -113,7 +108,6 @@
             <span class="text-gray-300">3kh0</span>
           </a>
 
-          <!-- Steam -->
           <a
             href="https://steamcommunity.com/id/3kh0_"
             target="_blank"
@@ -140,7 +134,6 @@
             <span class="text-gray-300">Second Account</span>
           </a>
 
-          <!-- Last.fm -->
           <a
             href="https://last.fm/user/realecho"
             target="_blank"
@@ -167,7 +160,6 @@
             <span class="text-gray-300">3kh0</span>
           </a>
 
-          <!-- Bandcamp -->
           <a
             href="https://bandcamp.com/3kh0"
             target="_blank"
@@ -181,7 +173,6 @@
             <span class="text-gray-300">3kh0</span>
           </a>
 
-          <!-- SoundCloud -->
           <a
             href="https://soundcloud.com/3kh0"
             target="_blank"
@@ -195,7 +186,6 @@
             <span class="text-gray-300">3kh0</span>
           </a>
 
-          <!-- YouTube -->
           <a
             href="https://youtube.com/@3kh0"
             target="_blank"
@@ -209,7 +199,6 @@
             <span class="text-gray-300">@3kh0</span>
           </a>
 
-          <!-- GitLab -->
           <a
             href="https://gitlab.com/3kh0"
             target="_blank"
@@ -223,7 +212,6 @@
             <span class="text-gray-300">3kh0</span>
           </a>
 
-          <!-- Spotify -->
           <a
             href="https://open.spotify.com/user/z3dlpi0cfntezy77ypqi8xass"
             target="_blank"
@@ -237,7 +225,6 @@
             <span class="text-gray-300">Spotify Profile</span>
           </a>
 
-          <!-- Twitch -->
           <a
             href="https://www.twitch.tv/3kh0_live"
             target="_blank"
@@ -251,7 +238,6 @@
             <span class="text-gray-300">3kh0_live</span>
           </a>
 
-          <!-- Reddit -->
           <a
             href="https://old.reddit.com/u/3kh0_reddit/"
             target="_blank"
@@ -265,7 +251,6 @@
             <span class="text-gray-300">u/3kh0_reddit</span>
           </a>
 
-          <!-- TikTok -->
           <a
             href="./files/serious.mp4"
             target="_blank"
@@ -280,7 +265,6 @@
           </a>
         </div>
 
-        <!-- Discord Note -->
         <div
           class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-red-500/30 p-6 mx-auto"
         >
@@ -317,23 +301,21 @@
 </template>
 
 <script setup>
-// Add intersection observer for animations on mounted
 onMounted(() => {
+  // ty codepen
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-          // Add staggered delay based on index
           setTimeout(() => {
             entry.target.classList.add("fade-in-up");
           }, index * 50);
         }
       });
     },
-    { threshold: 0.1 },
+    { threshold: 0.1 }
   );
 
-  // Observe all contact cards
   document.querySelectorAll("a.bg-black\\/40").forEach((card) => {
     observer.observe(card);
   });
@@ -356,15 +338,12 @@ onMounted(() => {
   animation: fadeInUp 0.6s ease forwards;
 }
 
-/* Initialize cards as invisible */
 a.bg-black\/40 {
   opacity: 0;
 }
 
-/* Add SVG color styling */
 img[src^="/svg/"] {
   filter: brightness(0) saturate(100%) invert(64%) sepia(21%) saturate(4291%)
     hue-rotate(103deg) brightness(102%) contrast(96%);
-  /* This filter approximates #05df72 */
 }
 </style>

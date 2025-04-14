@@ -173,23 +173,20 @@ const projects = [
   },
 ];
 
-// Add intersection observer for animations on mounted
 onMounted(() => {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-          // Add staggered delay based on index
           setTimeout(() => {
             entry.target.classList.add("fade-in-up");
           }, index * 100);
         }
       });
     },
-    { threshold: 0.1 },
+    { threshold: 0.1 }
   );
 
-  // Observe all project cards
   document.querySelectorAll(".bg-black\\/40").forEach((card) => {
     observer.observe(card);
   });
@@ -212,7 +209,6 @@ onMounted(() => {
   animation: fadeInUp 0.6s ease forwards;
 }
 
-/* Initialize cards as invisible */
 .bg-black\/40 {
   opacity: 0;
 }
