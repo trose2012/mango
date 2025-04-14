@@ -48,9 +48,9 @@ const reviews = [
     text: "3kh0's cool tbh :3 Like they're genuinely nice to talk to and hang out with, highly recommend just yapping to them sometime :3",
   },
   {
-    name: "Suya",
-    pfp: "/img/suya.png",
-    text: "A \"slightly\" privacy obsessed gay furry nerd. That doesn\'t narrow it down whatsoever, but it does mean he\'s cool (which is is indeed :3)",
+    name: "shokz",
+    pfp: "/img/shokz.png",
+    text: "awesome exchanger with no fees and fast to work with, thank you!",
   },
   {
     name: "Franz",
@@ -61,6 +61,11 @@ const reviews = [
     name: "Deployer",
     pfp: "/img/deployer.png",
     text: "Echo is such a cool guy! He’s incredibly caring, he even donated a dollar to me! :3 He’s super helpful and truly seems like an amazing developer. The projects he creates always work so well, and I'm constantly impressed by how bug-free they are!",
+  },
+  {
+    name: "Suya",
+    pfp: "/img/suya.png",
+    text: "A \"slightly\" privacy obsessed gay furry nerd. That doesn\'t narrow it down whatsoever, but it does mean he\'s cool (which is is indeed :3)",
   },
 ];
 </script>
