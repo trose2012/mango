@@ -496,6 +496,8 @@
         </div>
       </section>
 
+      <Reviews />
+
       <section id="final" class="py-16 mb-60">
         <div
           class="bg-transparent backdrop-blur-[3px] rounded-2xl border border-green-500/20 shadow-xl p-8 w-full transition-all duration-300"
@@ -524,6 +526,8 @@
 </template>
 
 <script setup>
+import Reviews from "~/components/index/reviews.vue";
+
 const downTwo = () => {
   const skills = document.getElementById("skills");
   if (skills) {
@@ -544,7 +548,7 @@ onMounted(() => {
         }
       });
     },
-    { threshold: 0.1 },
+    { threshold: 0.1 }
   );
 
   document
