@@ -1,7 +1,7 @@
 <template>
   <div
     class="fixed bottom-6 right-6 z-40 transition-all duration-500 ease-in-out"
-    :class="{ 'w-96 h-20': expanded, 'w-12 h-12': !expanded }"
+    :class="{ 'w-80 h-16': expanded, 'w-12 h-12': !expanded }"
   >
     <!-- Collapsed View -->
     <div
@@ -30,13 +30,13 @@
     <!-- Expanded View -->
     <div
       v-else
-      class="bg-zinc-900 rounded-full shadow-lg p-4 flex items-center transition-all duration-500"
+      class="bg-zinc-900 rounded-lg shadow-lg p-3 flex items-center transition-all duration-500"
     >
       <!-- Album Cover -->
       <img
         :src="`/music/${currentSong.src.replace('.mp3', '.png')}`"
         alt="Album Cover"
-        class="w-16 h-16 rounded-lg object-cover mr-4"
+        class="w-14 h-14 rounded-md object-cover mr-3"
       />
 
       <!-- Song Info -->
@@ -44,19 +44,20 @@
         <div class="text-white text-sm font-semibold truncate">
           {{ currentSong.title }}
         </div>
-        <div class="text-gray-400 text-xs truncate mt-1">
+        <div class="text-gray-400 text-xs truncate mt-1 flex items-center">
           <span
             v-if="currentSong.explicit"
-            class="uppercase text-red-500 font-bold mr-1"
+            class="uppercase bg-gray-300 text-zinc-900 font-semibold mr-1 flex items-center justify-center"
+            style="width: 16px; height: 16px; border-radius: 3px"
           >
-            Explicit
+            E
           </span>
           {{ currentSong.artist }}
         </div>
       </div>
 
       <!-- Controls -->
-      <div class="flex items-center space-x-4">
+      <div class="flex items-center space-x-3">
         <!-- Play/Pause Button -->
         <button
           @click="play"
@@ -67,7 +68,7 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="w-6 h-6"
+            class="w-5 h-5"
           >
             <path
               fill-rule="evenodd"
@@ -80,7 +81,7 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="w-6 h-6"
+            class="w-5 h-5"
           >
             <path
               fill-rule="evenodd"
@@ -99,7 +100,7 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="w-6 h-6"
+            class="w-5 h-5"
           >
             <path
               d="M5.055 7.06C3.805 6.347 2.25 7.25 2.25 8.69v8.122c0 1.44 1.555 2.343 2.805 1.628L12 14.471v2.34c0 1.44 1.555 2.343 2.805 1.628l7.108-4.061c1.26-.72 1.26-2.536 0-3.256l-7.108-4.061C13.555 6.346 12 7.249 12 8.689v2.34L5.055 7.06Z"
@@ -127,13 +128,13 @@ const songs = [
     title: "spinnin round my head",
     artist: "phimtown & fauxx",
     src: "music3.mp3",
-    explicit: false,
+    explicit: true,
   },
   {
     title: "IRIS",
     artist: "blackwinterwells",
     src: "music4.mp3",
-    explicit: false,
+    explicit: true,
   },
   {
     title: "HEAL",
@@ -157,7 +158,7 @@ const songs = [
     title: "Wreck",
     artist: "Fly To The Night",
     src: "music8.mp3",
-    explicit: false,
+    explicit: true,
   },
   {
     title: "Philosophy of a Knife",
@@ -201,7 +202,7 @@ const songs = [
     src: "music15.mp3",
     explicit: false,
   },
-  { title: "hero", artist: "juno", src: "music16.mp3", explicit: false },
+  { title: "hero", artist: "juno", src: "music16.mp3", explicit: true },
   { title: "Alps", artist: "Motorama", src: "music17.mp3", explicit: false },
   {
     title: "Timebomb Zone",
@@ -219,7 +220,7 @@ const songs = [
     title: "Where U From?",
     artist: "DJ TWI$T II",
     src: "music21.mp3",
-    explicit: false,
+    explicit: true,
   },
   { title: "Oh Yeah?", artist: "Frizk", src: "music22.mp3", explicit: false },
   { title: "RETRY!", artist: "GASPXR", src: "music23.mp3", explicit: false },
@@ -239,7 +240,7 @@ const songs = [
     title: "OVERRIDE",
     artist: "KSLV Noh",
     src: "music26.mp3",
-    explicit: false,
+    explicit: true,
   },
 ];
 
