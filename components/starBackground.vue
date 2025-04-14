@@ -1,12 +1,12 @@
 <script setup>
 let cleanup = null;
 onMounted(async () => {
-  const bg = await import("../assets/js/background.ts");
+  const a = await import("../assets/js/background.ts");
 
-  if (bg.default && typeof bg.default === "function") {
-    cleanup = bg.default();
-  } else if (bg.init && typeof bg.init === "function") {
-    cleanup = bg.init();
+  if (a.default && typeof a.default === "function") {
+    cleanup = a.default();
+  } else if (a.init && typeof a.init === "function") {
+    cleanup = a.init();
   }
 });
 

@@ -22,7 +22,7 @@
       <!-- Play/Pause Button for collapsed state -->
       <button
         v-if="!expanded"
-        @click="toggleExpandAndPlay"
+        @click="firstPlay"
         class="w-8 h-8 flex items-center justify-center text-white rounded-full hover:text-green-400 transition-colors p-0 m-0"
       >
         <svg
@@ -53,8 +53,8 @@
         <div class="flex items-center space-x-2 ml-2">
           <!-- Pause Button -->
           <button
-            v-if="isPlaying"
-            @click="togglePlay"
+            v-if="playing"
+            @click="play"
             class="text-white hover:text-green-400 transition-colors"
           >
             <svg
@@ -74,7 +74,7 @@
           <!-- Play Button -->
           <button
             v-else
-            @click="togglePlay"
+            @click="play"
             class="text-white hover:text-green-400 transition-colors"
           >
             <svg
@@ -93,7 +93,7 @@
 
           <!-- Next Button -->
           <button
-            @click="playNext"
+            @click="skip"
             class="text-white hover:text-green-400 transition-colors"
           >
             <svg
@@ -112,9 +112,9 @@
     </div>
 
     <audio
-      ref="audioPlayer"
+      ref="player"
       :src="`/music/${currentSong.src}`"
-      @ended="playNext"
+      @ended="skip"
       volume="0.3"
       @canplaythrough="canPlay = true"
     ></audio>
@@ -142,83 +142,71 @@ const songs = [
 ];
 
 const expanded = ref(false);
-const isPlaying = ref(false);
-const audioPlayer = ref(null);
+const playing = ref(false);
+const player = ref(null);
 const canPlay = ref(false);
+const current = ref(0); // ssr
+const currentSong = computed(() => songs[current.value]);
 
-const currentIndex = ref(0); // fix ssr error
-const currentSong = computed(() => songs[currentIndex.value]);
 onMounted(() => {
-  currentIndex.value = Math.floor(Math.random() * songs.length);
-  audioPlayer.value.load();
-  audioPlayer.value.volume = 0.3;
+  current.value = Math.floor(Math.random() * songs.length);
+  player.value.load();
+  player.value.volume = 0.3;
 });
 
-const togglePlay = async () => {
-  console.log("togglePlay");
+const play = async () => {
   if (!canPlay.value) {
-    console.log("audio not ready???");
   }
-  if (isPlaying.value) {
-    console.log("pause");
-    audioPlayer.value.pause();
-    isPlaying.value = false;
+  if (playing.value) {
+    player.value.pause();
+    playing.value = false;
     expanded.value = false;
   } else {
-    console.log("play");
     try {
-      await audioPlayer.value.play();
-      isPlaying.value = true;
+      await player.value.play();
+      playing.value = true;
     } catch (err) {
-      console.error("Error playing audio:", err);
-      isPlaying.value = false; // kill
+      console.error(err);
+      playing.value = false; // kill
     }
   }
-  console.log("isPlaying", isPlaying.value);
 };
 
-const toggleExpandAndPlay = async () => {
-  console.log("toggleExpandAndPlay");
+const firstPlay = async () => {
   expanded.value = true;
   await nextTick(); // wait for next
   if (!canPlay.value) {
-    console.log("audio not ready???");
-    playNext(); // fuck you we move on
+    skip(); // fuck you we move on
     const waitForAudioReady = new Promise((resolve) => {
       const onCanPlayThrough = () => {
         canPlay.value = true;
-        audioPlayer.value.removeEventListener(
-          "canplaythrough",
-          onCanPlayThrough,
-        );
+        player.value.removeEventListener("canplaythrough", onCanPlayThrough);
         resolve();
       };
-      audioPlayer.value.addEventListener("canplaythrough", onCanPlayThrough);
+      player.value.addEventListener("canplaythrough", onCanPlayThrough);
     });
     await waitForAudioReady;
   }
 
   try {
-    console.log("play");
-    await audioPlayer.value.play();
-    isPlaying.value = true;
+    await player.value.play();
+    playing.value = true;
   } catch (err) {
     console.error(err);
-    isPlaying.value = false;
+    playing.value = false;
     expanded.value = false;
   }
 };
 
-const playNext = () => {
-  console.log("playing next");
+const skip = () => {
   // make sure we play the audio if not playing already
   setTimeout(() => {
-    audioPlayer.value.play();
+    player.value.play();
   }, 50);
-  currentIndex.value = (currentIndex.value + 1) % songs.length;
+  current.value = (current.value + 1) % songs.length;
   nextTick(() => {
-    if (isPlaying.value && canPlay.value) {
-      audioPlayer.value.play().catch((err) => {
+    if (playing.value && canPlay.value) {
+      player.value.play().catch((err) => {
         console.error(err);
       });
     }
@@ -226,9 +214,9 @@ const playNext = () => {
 };
 
 onBeforeUnmount(() => {
-  if (audioPlayer.value) {
-    audioPlayer.value.pause();
-    audioPlayer.value.src = "";
+  if (player.value) {
+    player.value.pause();
+    player.value.src = "";
   }
 });
 </script>
