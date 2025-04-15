@@ -36,7 +36,7 @@
       <img
         :src="`/music/${currentSong.src.replace('.mp3', '.png')}`"
         alt="Album Cover"
-        class="w-14 h-14 rounded-md object-cover mr-3"
+        class="w-12 h-12 rounded-md object-cover mr-3"
       />
 
       <!-- Song Info -->
@@ -68,12 +68,10 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="w-5 h-5"
+            class="w-6 h-6"
           >
             <path
-              fill-rule="evenodd"
-              d="M6.75 5.25a.75.75 0 0 1 .75-.75H9a.75.75 0 0 1 .75.75v13.5a.75.75 0 0 1-.75.75H7.5a.75.75 0 0 1-.75-.75V5.25Zm7.5 0A.75.75 0 0 1 15 4.5h1.5a.75.75 0 0 1 .75.75v13.5a.75.75 0 0 1-.75.75H15a.75.75 0 0 1-.75-.75V5.25Z"
-              clip-rule="evenodd"
+              d="M8 19c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2s-2 .9-2 2v10c0 1.1.9 2 2 2m6-12v10c0 1.1.9 2 2 2s2-.9 2-2V7c0-1.1-.9-2-2-2s-2 .9-2 2"
             />
           </svg>
           <svg
@@ -81,12 +79,10 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="w-5 h-5"
+            class="w-6 h-6"
           >
             <path
-              fill-rule="evenodd"
-              d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
-              clip-rule="evenodd"
+              d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82"
             />
           </svg>
         </button>
@@ -94,16 +90,16 @@
         <!-- Skip Button -->
         <button
           @click="skip"
-          class="text-white hover:text-green-400 transition-colors"
+          class="text-white hover:text-green-400 transition-colors mr-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
+            class="w-6 h-6"
             fill="currentColor"
-            class="w-5 h-5"
           >
             <path
-              d="M5.055 7.06C3.805 6.347 2.25 7.25 2.25 8.69v8.122c0 1.44 1.555 2.343 2.805 1.628L12 14.471v2.34c0 1.44 1.555 2.343 2.805 1.628l7.108-4.061c1.26-.72 1.26-2.536 0-3.256l-7.108-4.061C13.555 6.346 12 7.249 12 8.689v2.34L5.055 7.06Z"
+              d="m7.58 16.89l5.77-4.07c.56-.4.56-1.24 0-1.63L7.58 7.11C6.91 6.65 6 7.12 6 7.93v8.14c0 .81.91 1.28 1.58.82M16 7v10c0 .55.45 1 1 1s1-.45 1-1V7c0-.55-.45-1-1-1s-1 .45-1 1"
             />
           </svg>
         </button>
@@ -122,8 +118,18 @@
 
 <script setup>
 const songs = [
-  { title: "enby", artist: "fauxx", src: "music1.mp3", explicit: false },
-  { title: "too late", artist: "snuffles", src: "music2.mp3", explicit: false },
+  {
+    title: "enby",
+    artist: "fauxx",
+    src: "music1.mp3",
+    explicit: false,
+  },
+  {
+    title: "too late",
+    artist: "snuffles",
+    src: "music2.mp3",
+    explicit: false,
+  },
   {
     title: "spinnin round my head",
     artist: "phimtown & fauxx",
@@ -202,8 +208,18 @@ const songs = [
     src: "music15.mp3",
     explicit: false,
   },
-  { title: "hero", artist: "juno", src: "music16.mp3", explicit: true },
-  { title: "Alps", artist: "Motorama", src: "music17.mp3", explicit: false },
+  {
+    title: "hero",
+    artist: "juno",
+    src: "music16.mp3",
+    explicit: true,
+  },
+  {
+    title: "Alps",
+    artist: "Motorama",
+    src: "music17.mp3",
+    explicit: false,
+  },
   {
     title: "Timebomb Zone",
     artist: "The Prodigy",
@@ -214,7 +230,7 @@ const songs = [
     title: "WTF 2 (sped up)",
     artist: "Ugovhb, EF",
     src: "music20.mp3",
-    explicit: false,
+    explicit: true,
   },
   {
     title: "Where U From?",
