@@ -50,7 +50,7 @@ const reviews = [
   {
     name: "shokz",
     pfp: "/img/shokz.png",
-    text: "awesome exchanger with no fees and fast to work with, thank you!",
+    text: "awesome exchanger with low fees and fast to work with, thank you!",
   },
   {
     name: "Franz",
