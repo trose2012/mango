@@ -42,7 +42,7 @@
         {{ rm }}
       </p>
     </div>
-    <Header class="z-2" />
+    <SiteHeader class="z-2" />
 
     <div class="flex flex-col items-center justify-center min-h-screen z-1">
       <slot />
@@ -50,7 +50,7 @@
     <StarBackground />
     <MusicBox />
 
-    <Footer />
+    <SiteFooter class="z-2" />
   </div>
 </template>
 
