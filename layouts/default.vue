@@ -71,8 +71,8 @@ useHead({
   ],
 });
 
-const a = ref(true); // Controls the visibility of the loader
-const b = ref(false); // Controls the opacity of the loader
+const a = ref(true);
+const b = ref(false);
 const m = [
   "You have been placed in a queue, awaiting forwarding to the platform...", // dread reference
   "Stealing your information...",
@@ -106,24 +106,18 @@ const m = [
   "Thinking...",
 ];
 
-// Start with a random message instead of always the first one
-const getRandomMessage = () => {
-  const randomIndex = Math.floor(Math.random() * m.length);
-  return m[randomIndex];
+const getMsg = () => {
+  const random = Math.floor(Math.random() * m.length);
+  return m[random];
 };
 
-// Initialize with the first message for SSR
 const rm = ref(m[0]);
-const intervalId = ref(null);
+const i = ref(null);
 
-// Only run on client-side
 onBeforeMount(() => {
-  // Set a random message immediately when component mounts on client
-  rm.value = getRandomMessage();
-
-  // Start the interval
-  intervalId.value = setInterval(() => {
-    rm.value = getRandomMessage();
+  rm.value = getMsg();
+  i.value = setInterval(() => {
+    rm.value = getMsg();
   }, 1000);
 });
 
@@ -141,25 +135,23 @@ onMounted(() => {
   });
 
   Promise.all([c, d]).then(() => {
-    b.value = true; // Fade out the loader
+    b.value = true;
 
-    // Clear the interval when the page is loaded
-    if (intervalId.value) {
-      clearInterval(intervalId.value);
-      intervalId.value = null;
+    if (i.value) {
+      clearInterval(i.value);
+      i.value = null;
     }
 
     setTimeout(() => {
-      a.value = false; // Hide the loader completely
+      a.value = false;
     }, 500);
   });
 });
 
-// Make sure to clean up the interval if the component is unmounted
 onBeforeUnmount(() => {
-  if (intervalId.value) {
-    clearInterval(intervalId.value);
-    intervalId.value = null;
+  if (i.value) {
+    clearInterval(i.value);
+    i.value = null;
   }
 });
 </script>

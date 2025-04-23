@@ -39,7 +39,6 @@
         class="w-12 h-12 rounded-md object-cover mr-3"
       />
 
-      <!-- Song Info -->
       <div class="flex-1">
         <div class="text-white text-sm font-semibold truncate">
           {{ currentSong.title }}
@@ -56,9 +55,7 @@
         </div>
       </div>
 
-      <!-- Controls -->
       <div class="flex items-center space-x-3">
-        <!-- Play/Pause Button -->
         <button
           @click="play"
           class="text-white hover:text-green-400 transition-colors"
@@ -87,7 +84,6 @@
           </svg>
         </button>
 
-        <!-- Skip Button -->
         <button
           @click="skip"
           class="text-white hover:text-green-400 transition-colors mr-2"
@@ -337,17 +333,3 @@ onBeforeUnmount(() => {
   }
 });
 </script>
-
-<style scoped>
-@keyframes a {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.spin {
-  animation: a 10s linear infinite;
-}
-</style>

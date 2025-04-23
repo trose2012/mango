@@ -9,8 +9,7 @@
         What People Say About Me
       </h1>
       <p class="text-center text-lg mb-8">
-        Here are some reviews from people I have either worked with or have been
-        good friends with.
+        Here is what some of my friends and clients have to say about me.
       </p>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div
@@ -28,9 +27,15 @@
               {{ review.name }}
             </h3>
           </div>
-          <p class="text-white">{{ review.text }}</p>
+          <p class="text-white">{{ review.msg }}</p>
         </div>
       </div>
+      <p class="text-center text-md mt-8">
+        Needless to say, I have worked with a lot of people and have made a lot
+        of friends. I am always open to working with new people, so feel free to
+        reach out to me if you want to work on a project together or just want
+        to chat!
+      </p>
     </div>
   </section>
 </template>
@@ -40,32 +45,32 @@ const reviews = [
   {
     name: "RJTHEBOSS on LocalCoinSwap",
     pfp: "/img/lcs_default.png",
-    text: "Such an honest guy. He really trust people and have a lot patience really glad to find him to trade",
+    msg: "Such an honest guy. He really trust people and have a lot patience really glad to find him to trade",
   },
   {
     name: "Firepup Sixfifty",
     pfp: "/img/firepup.png",
-    text: "3kh0's cool tbh :3 Like they're genuinely nice to talk to and hang out with, highly recommend just yapping to them sometime :3",
+    msg: "3kh0's cool tbh :3 Like they're genuinely nice to talk to and hang out with, highly recommend just yapping to them sometime :3",
   },
   {
     name: "shokz",
     pfp: "/img/shokz.png",
-    text: "awesome exchanger with low fees and fast to work with, thank you!",
+    msg: "He is an awesome exchanger with low fees and fast to work with, thank you so much!",
   },
   {
     name: "Franz",
     pfp: "/img/franz.png",
-    text: "There are very few people that you can trust fully in life, and he is definitely on the list as a partner and a friend <3",
+    msg: "There are very few people that you can trust fully in life, and he is definitely on the list as a business partner and a friend <3",
   },
   {
     name: "Deployer",
     pfp: "/img/deployer.png",
-    text: "Echo is such a cool guy! He’s incredibly caring, he even donated a dollar to me! :3 He’s super helpful and truly seems like an amazing developer. The projects he creates always work so well, and I'm constantly impressed by how bug-free they are!",
+    msg: "Echo is such a cool guy! He’s incredibly caring, he even donated a dollar to me! :3 He’s super helpful and truly seems like an amazing developer. The projects he creates always work so well, and I'm constantly impressed by how bug-free they are!",
   },
   {
     name: "Suya",
     pfp: "/img/suya.png",
-    text: "A \"slightly\" privacy obsessed gay furry nerd. That doesn\'t narrow it down whatsoever, but it does mean he\'s cool (which is is indeed :3)",
+    msg: "A \"slightly\" privacy obsessed gay furry nerd. That doesn\'t narrow it down whatsoever, but it does mean he\'s cool (which is is indeed :3)",
   },
 ];
 </script>

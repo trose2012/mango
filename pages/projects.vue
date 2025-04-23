@@ -35,7 +35,7 @@
               <h2 class="text-xl font-semibold mb-3 text-green-400">
                 {{ project.name }}
               </h2>
-              <p class="text-gray-300 mb-4">{{ project.description }}</p>
+              <p class="text-gray-300 mb-4">{{ project.desc }}</p>
 
               <div class="flex flex-wrap gap-2 mt-4">
                 <div
@@ -112,8 +112,7 @@ const projects = [
   {
     name: "HCBScan",
     image: "/img/b23f69dc-9345-46e8-a1b2-abc6321b4bc3.png",
-    description:
-      "HCBScan is an open-source explorer for HCB that allows you to search for organizations, view transactions, and explore public financial data.",
+    desc: "HCBScan is an open-source explorer for HCB that allows you to search for organizations, view transactions, and explore public financial data.",
     tech: ["JavaScript", "Vue", "Supabase", "TailwindCSS"],
     git: "https://github.com/3kh0/hcbscan",
     demo: "https://hcbscan.3kh0.net/app",
@@ -121,8 +120,7 @@ const projects = [
   {
     name: "Echo net extras",
     image: "/img/f4ef3600-f370-4a6a-9313-3f1fbac9a95f.png",
-    description:
-      "A collection of random tools, utilities, and other things that I have created and use somewhat regularly to make my life easier.",
+    desc: "A collection of random tools, utilities, and other things that I have created and use somewhat regularly to make my life easier.",
     tech: ["Nuxt", "Vue", "JavaScript", "TailwindCSS"],
     git: "https://github.com/3kh0/echonet-extra-nuxt",
     demo: "https://extra.3kh0.net",
@@ -130,25 +128,30 @@ const projects = [
   {
     name: "FileHunt",
     image: "/img/9afd94f1-892b-407d-86ea-f141377ed2e2.png",
-    description:
-      "Search query builder for finding sensitive files on the web. Using Google Dorks, you are able to find much more.",
+    desc: "Search query builder for finding sensitive files on the web. Using Google Dorks, you are able to find much more.",
     tech: ["Nextjs", "Typescript", "TailwindCSS"],
     git: "https://github.com/3kh0/filehunt",
     demo: "https://filehunt.3kh0.net",
   },
   {
+    name: "The ____ situation is crazy",
+    image: "/img/9900a737-055a-43a6-bf2a-3e58a1240c85.png",
+    desc: " Create screenshots in the style of penguinz0 videos with a custom text. This is a fun little project I made for my friends.",
+    tech: ["Nextjs", "Typescript", "TailwindCSS"],
+    git: "https://github.com/3kh0/the-situation",
+    demo: "https://situation.3kh0.net",
+  },
+  {
     name: "3kh0 Games",
     image: "/img/0f7af44a-7951-4ad4-8d98-232d1d5c57c1.png",
-    description:
-      "A online gaming website that allowed people to play games in their Chromebooks in school, lasted 2 years and was a huge success.",
+    desc: "A online gaming website that allowed people to play games in their Chromebooks in school, lasted 2 years and was a huge success.",
     tech: ["HTML", "CSS", "JavaScript"],
     git: "https://codeberg.org/3kh0/website-v4/",
   },
   {
     name: "Oxide",
     image: "/img/55073d6a-ac98-4187-8fec-518fcc034a07.png",
-    description:
-      "No tracking, no useless stuff, just a dead simple proxy - Built as a joke submission for the Titanium Network Proxathon 2024",
+    desc: "No tracking, no useless stuff, just a dead simple proxy - Built as a joke submission for the Titanium Network Proxathon 2024",
     tech: ["JavaScript", "HTML"],
     git: "https://github.com/3kh0/Oxide",
     demo: null,
@@ -156,8 +159,7 @@ const projects = [
   {
     name: "Echodown",
     image: "/img/dd81eb68-3ec1-40ac-8fec-88bd872e3801.png",
-    description:
-      "Fake DDoS attack tool that makes it look like you're performing a DDoS attack on a website, but it's just a harmless prank.",
+    desc: "Fake DDoS attack tool that makes it look like you're performing a DDoS attack on a website, but it's just a harmless prank.",
     tech: ["Python"],
     git: "https://github.com/3kh0/echodown",
     demo: null,
@@ -165,8 +167,7 @@ const projects = [
   {
     name: "3kh0 Lite",
     image: "/img/fd3401c3-88b1-4e33-a1cf-aed47ef7cbb6.png",
-    description:
-      "A lightweight version of 3kh0 Games, designed to be a spiritual successor to the original. It retains the core features but is much cleaner.",
+    desc: "A lightweight version of 3kh0 Games, designed to be a spiritual successor to the original. It retains the core features but is much cleaner.",
     tech: ["HTML", "CSS", "JavaScript"],
     git: "https://github.com/3kh0/3kh0-lite",
     demo: "https://lite.3kh0.net/",

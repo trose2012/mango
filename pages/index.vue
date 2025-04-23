@@ -496,7 +496,7 @@
         </div>
       </section>
 
-      <Reviews />
+      <IndexReviews />
 
       <section id="final" class="py-16 mb-60">
         <div
@@ -526,8 +526,6 @@
 </template>
 
 <script setup>
-import Reviews from "~/components/index/reviews.vue";
-
 const downTwo = () => {
   const skills = document.getElementById("skills");
   if (skills) {

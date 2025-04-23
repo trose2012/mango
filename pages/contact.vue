@@ -289,8 +289,8 @@
               </h3>
               <p class="text-gray-300 mb-4">
                 If it is not on this list, it is not me. I do not have any other
-                accounts on any platform. If you see an account that looks like
-                mine, it is not me.
+                accounts on any platforms. If you see an account that looks like
+                mine, it is most likely not me.
               </p>
             </div>
           </div>
