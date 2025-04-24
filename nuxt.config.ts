@@ -24,7 +24,18 @@ export default defineNuxtConfig({
       sourcemap: false,
     },
   },
-  modules: ["@nuxt/image", "@nuxtjs/robots", "@nuxt/fonts", "@nuxt/icon"],
+  modules: [
+    "@nuxt/image",
+    "@nuxtjs/robots",
+    "@nuxt/fonts",
+    "@nuxt/icon",
+    "nuxt-umami",
+  ],
+  umami: {
+    id: "ab5f5820-5c1d-4035-bbfc-8815f46dbfa2",
+    host: "https://data.3kh0.net",
+    autoTrack: true,
+  },
   robots: {
     blockNonSeoBots: true,
     blockAiBots: true,
