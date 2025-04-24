@@ -29,7 +29,7 @@
 
         <!-- 88x31 -->
         <div class="px-6 pb-6">
-          <div class="flex flex-wrap justify-center gap-2 mb-6">
+          <div class="flex flex-wrap justify-center gap-2 mb-2">
             <img
               src="~/assets/media/88x31/gay.png"
               alt="boykisser"
@@ -95,6 +95,44 @@
               alt="Fuck Facebook"
               class="w-[88px] h-[31px] transition-transform duration-200 hover:scale-110 hover:z-10"
             />
+          </div>
+
+          <p class="flex items-center justify-center mb-2">Friends :D</p>
+
+          <div class="flex flex-wrap justify-center gap-2 mb-6">
+            <a
+              href="https://prpl.wtf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="~/assets/media/88x31/prpl_wtf.gif"
+                alt="Emma"
+                class="w-[88px] h-[31px] transition-transform duration-200 hover:scale-110 hover:z-10"
+              />
+            </a>
+            <a
+              href="https://wearr.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="~/assets/media/88x31/wearr.gif"
+                alt="wearr"
+                class="w-[88px] h-[31px] transition-transform duration-200 hover:scale-110 hover:z-10"
+              />
+            </a>
+            <a
+              href="https://bunnyguy.foo/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="~/assets/media/88x31/snipchu.gif"
+                alt="Tuyet"
+                class="w-[88px] h-[31px] transition-transform duration-200 hover:scale-110 hover:z-10"
+              />
+            </a>
           </div>
 
           <!-- fuggin links and shi-->
