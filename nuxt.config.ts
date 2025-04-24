@@ -24,7 +24,7 @@ export default defineNuxtConfig({
       sourcemap: false,
     },
   },
-  modules: ["@nuxt/image", "@nuxtjs/robots", "@nuxt/fonts"],
+  modules: ["@nuxt/image", "@nuxtjs/robots", "@nuxt/fonts", "@nuxt/icon"],
   robots: {
     blockNonSeoBots: true,
     blockAiBots: true,
