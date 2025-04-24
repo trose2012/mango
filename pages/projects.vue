@@ -112,7 +112,7 @@ const projects = [
   {
     name: "HCBScan",
     image: "/img/b23f69dc-9345-46e8-a1b2-abc6321b4bc3.png",
-    desc: "HCBScan is an open-source explorer for HCB that allows you to search for organizations, view transactions, and explore public financial data.",
+    desc: "HCBScan is an explorer for HCB that allows you to search for organizations, view transactions, and explore public financial data.",
     tech: ["JavaScript", "Vue", "Supabase", "TailwindCSS"],
     git: "https://github.com/3kh0/hcbscan",
     demo: "https://hcbscan.3kh0.net/app",
@@ -167,7 +167,7 @@ const projects = [
   {
     name: "3kh0 Lite",
     image: "/img/fd3401c3-88b1-4e33-a1cf-aed47ef7cbb6.png",
-    desc: "A lightweight version of 3kh0 Games, designed to be a spiritual successor to the original. It retains the core features but is much cleaner.",
+    desc: "A lightweight version of 3kh0 Games, designed to be a spiritual successor to the original while being much cleaner and faster.",
     tech: ["HTML", "CSS", "JavaScript"],
     git: "https://github.com/3kh0/3kh0-lite",
     demo: "https://lite.3kh0.net/",
@@ -185,7 +185,7 @@ onMounted(() => {
         }
       });
     },
-    { threshold: 0.1 },
+    { threshold: 0.1 }
   );
 
   document.querySelectorAll(".bg-black\\/40").forEach((card) => {
