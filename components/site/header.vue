@@ -10,7 +10,7 @@
               to="/"
               class="text-white text-xl sm:text-2xl font-bold transition-colors hover:scale-105 transform"
             >
-              3kh0.net
+              Chr0ma.me
             </NuxtLink>
           </div>
 
