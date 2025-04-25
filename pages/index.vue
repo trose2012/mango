@@ -17,14 +17,13 @@
               <h1
                 class="text-5xl md:text-6xl font-bold text-green-400 [text-shadow:0_0_10px_rgba(34,197,94,0.8)]"
               >
-                Heyo, I am Echo!
+                Hi, I am Chroma!
               </h1>
               <p
                 class="text-xl leading-relaxed text-white max-w-xl mx-auto md:mx-0"
               >
-                I am a 16 year old software developer, hacker, furry,
-                cybersecurity enthusiast, and privacy activist. I like to make
-                cool things, help out others, obsess over privacy, and
+                I am a 12 year old web developer, and hacker. I like to make
+                cool things, help out others, and
                 procrastinate.
               </p>
             </div>
