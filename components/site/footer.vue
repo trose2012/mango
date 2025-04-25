@@ -27,119 +27,11 @@
           </div>
         </div>
 
-        <!-- 88x31 -->
-        <div class="px-6 pb-6">
-          <div class="flex flex-wrap justify-center gap-2 mb-2">
-            <img
-              src="~/assets/media/88x31/gay.png"
-              alt="boykisser"
-              class="w-[88px] h-[31px] transition-transform duration-200 hover:scale-110 hover:z-10"
-            />
-            <a
-              href="https://www.mozilla.org/en-US/firefox/new/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="~/assets/media/88x31/firefox.png"
-                alt="Take Back the Web"
-                class="w-[88px] h-[31px] transition-transform duration-200 hover:scale-110 hover:z-10"
-              />
-            </a>
-            <a
-              href="https://getmonero.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="~/assets/media/88x31/xmr.png"
-                alt="Get Monero"
-                class="w-[88px] h-[31px] transition-transform duration-200 hover:scale-110 hover:z-10"
-              />
-            </a>
-            <a
-              href="https://developer.valvesoftware.com/wiki/Source"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="~/assets/media/88x31/source.png"
-                alt="Powered by Source"
-                class="w-[88px] h-[31px] transition-transform duration-200 hover:scale-110 hover:z-10"
-              />
-            </a>
-            <a
-              href="https://ublockorigin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="~/assets/media/88x31/ublock.png"
-                alt="Get uBlock Origin now!"
-                class="w-[88px] h-[31px] transition-transform duration-200 hover:scale-110 hover:z-10"
-              />
-            </a>
-            <a
-              href="https://grapheneos.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="~/assets/media/88x31/graphene.png"
-                alt="GrapheneOS"
-                class="w-[88px] h-[31px] transition-transform duration-200 hover:scale-110 hover:z-10"
-              />
-            </a>
-            <img
-              src="~/assets/media/88x31/fuckfb.png"
-              alt="Fuck Facebook"
-              class="w-[88px] h-[31px] transition-transform duration-200 hover:scale-110 hover:z-10"
-            />
-          </div>
-
-          <p class="flex items-center justify-center mb-2">Friends :D</p>
-
-          <div class="flex flex-wrap justify-center gap-2 mb-6">
-            <a
-              href="https://prpl.wtf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="~/assets/media/88x31/prpl_wtf.gif"
-                alt="Emma"
-                class="w-[88px] h-[31px] transition-transform duration-200 hover:scale-110 hover:z-10"
-              />
-            </a>
-            <a
-              href="https://wearr.dev/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="~/assets/media/88x31/wearr.gif"
-                alt="wearr"
-                class="w-[88px] h-[31px] transition-transform duration-200 hover:scale-110 hover:z-10"
-              />
-            </a>
-            <a
-              href="https://bunnyguy.foo/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="~/assets/media/88x31/snipchu.gif"
-                alt="Tuyet"
-                class="w-[88px] h-[31px] transition-transform duration-200 hover:scale-110 hover:z-10"
-              />
-            </a>
-          </div>
-
           <!-- fuggin links and shi-->
           <div class="text-center text-md text-gray-400 space-y-2 mb-4">
             <p class="flex items-center justify-center gap-4">
               <a
-                href="https://github.com/3kh0/mango"
+                href="https://github.com/trose2012/mango"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-green-400 hover:underline flex items-center gap-1"
@@ -147,49 +39,9 @@
                 <Icon name="radix-icons:github-logo" size="1.25rem" />
                 Source
               </a>
-              <a
-                href="https://status.3kh0.net"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-green-400 hover:underline flex items-center gap-1"
-              >
-                <Icon name="heroicons-solid:status-online" size="1.25rem" />
-                Status
-              </a>
-              <a
-                href="http://aqjeignx5ussinaa64hq3s2phleke6jmworiqe2tmlh4kctklyq6pjqd.onion"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-green-400 hover:underline flex items-center gap-1"
-              >
-                <Icon name="lucide-lab:onion" size="1.25rem" />
-                Onion
-              </a>
-              <a
-                href="/canary.txt"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-green-400 hover:underline flex items-center gap-1"
-              >
-                <Icon
-                  name="material-symbols:check-circle-rounded"
-                  size="1.25rem"
-                />
-                Canary
-              </a>
-              <a
-                href="/pgp.txt"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-green-400 hover:underline flex items-center gap-1"
-              >
-                <Icon name="fa6-solid:key" size="1.25rem" />
-                PGP
-              </a>
             </p>
             <p class="flex items-center justify-center gap-1">
-              Made with
-              <span class="text-green-400">💚</span> and my two paws.
+              A bunch of credit to 3kh0.
             </p>
             <p class="flex items-center justify-center gap-1">
               Dedicated to the friends that have fallen and the ones that
