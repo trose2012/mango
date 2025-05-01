@@ -22,38 +22,7 @@
           </h2>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <a
-              href="https://signal.me/#eu/E3ce5K2f8buRX5Sl_I0e2M5pNJJ3VaxESLVm39uuKmFIn4X6eeFDNa4ksuw46w_J"
-              target="_blank"
-              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
-            >
-              <img
-                src="/svg/signal.svg"
-                alt="Signal"
-                class="h-10 w-10 mr-4 text-green-400"
-              />
-              <div>
-                <h3 class="text-xl font-medium text-green-400">Signal</h3>
-                <p class="text-gray-300">echo.99</p>
-              </div>
-            </a>
-
-            <a
-              href="https://t.me/x2d_45"
-              target="_blank"
-              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
-            >
-              <img
-                src="/svg/telegram.svg"
-                alt="Signal"
-                class="h-10 w-10 mr-4 text-green-400"
-              />
-              <div>
-                <h3 class="text-xl font-medium text-green-400">Telegram</h3>
-                <p class="text-gray-300">@x2d_45</p>
-              </div>
-            </a>
-
+            
             <a
               href="https://discord.com/users/1056383394470182922"
               target="_blank"
@@ -71,7 +40,7 @@
             </a>
 
             <a
-              href="mailto:hello@3kh0.net"
+              href="mailto:trosecoder@gmail.com"
               target="_blank"
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
             >
@@ -82,7 +51,7 @@
               />
               <div>
                 <h3 class="text-xl font-medium text-green-400">Email</h3>
-                <p class="text-gray-300">hello@3kh0.net</p>
+                <p class="text-gray-300">trosecoder@gmail.com</p>
               </div>
             </a>
           </div>
@@ -96,7 +65,7 @@
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12"
         >
           <a
-            href="https://github.com/3kh0"
+            href="https://github.com/trose2012"
             target="_blank"
             class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
           >
@@ -105,102 +74,11 @@
               alt="GitHub"
               class="h-8 w-8 mr-3 text-green-400"
             />
-            <span class="text-gray-300">3kh0</span>
+            <span class="text-gray-300">trose2012</span>
           </a>
 
           <a
-            href="https://steamcommunity.com/id/3kh0_"
-            target="_blank"
-            class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
-          >
-            <img
-              src="/svg/steam.svg"
-              alt="Steam"
-              class="h-8 w-8 mr-3 text-green-400"
-            />
-            <span class="text-gray-300">3kh0_</span>
-          </a>
-
-          <a
-            href="https://steamcommunity.com/id/haha-im-in-your-url-bar"
-            target="_blank"
-            class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
-          >
-            <img
-              src="/svg/steam.svg"
-              alt="Steam"
-              class="h-8 w-8 mr-3 text-green-400"
-            />
-            <span class="text-gray-300">Second Account</span>
-          </a>
-
-          <a
-            href="https://last.fm/user/realecho"
-            target="_blank"
-            class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
-          >
-            <img
-              src="/svg/lastfm.svg"
-              alt="Last.fm"
-              class="h-8 w-8 mr-3 text-green-400"
-            />
-            <span class="text-gray-300">realecho</span>
-          </a>
-
-          <a
-            href="https://stats.fm/3kh0"
-            target="_blank"
-            class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
-          >
-            <img
-              src="/svg/stats.svg"
-              alt="Last.fm"
-              class="h-8 w-8 mr-3 text-green-400"
-            />
-            <span class="text-gray-300">3kh0</span>
-          </a>
-
-          <a
-            href="https://bandcamp.com/3kh0"
-            target="_blank"
-            class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
-          >
-            <img
-              src="/svg/bandcamp.svg"
-              alt="Bandcamp"
-              class="h-8 w-8 mr-3 text-green-400"
-            />
-            <span class="text-gray-300">3kh0</span>
-          </a>
-
-          <a
-            href="https://soundcloud.com/3kh0"
-            target="_blank"
-            class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
-          >
-            <img
-              src="/svg/soundcloud.svg"
-              alt="SoundCloud"
-              class="h-8 w-8 mr-3 text-green-400"
-            />
-            <span class="text-gray-300">3kh0</span>
-          </a>
-
-          <a
-            href="https://youtube.com/@3kh0"
-            target="_blank"
-            class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
-          >
-            <img
-              src="/svg/yt.svg"
-              alt="YouTube"
-              class="h-8 w-8 mr-3 text-green-400"
-            />
-            <span class="text-gray-300">@3kh0</span>
-          </a>
-
-          <a
-            href="https://gitlab.com/3kh0"
+            href="https://gitlab.com/trosecoder"
             target="_blank"
             class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
           >
@@ -209,7 +87,7 @@
               alt="GitLab"
               class="h-8 w-8 mr-3 text-green-400"
             />
-            <span class="text-gray-300">3kh0</span>
+            <span class="text-gray-300">trosecoder</span>
           </a>
 
           <a
