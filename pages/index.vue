@@ -134,10 +134,9 @@
             </div>
           </div>
         </div>
-    </section>
       </section>
 
-      <IndexReviews />
+      <IndexReviews><IndexReviews />
 
       <section id="final" class="py-16 mb-60">
         <div
