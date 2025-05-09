@@ -343,47 +343,10 @@
                 them and I have to thank them for the unintended levels of
                 motivation they have given me. If you are on the Slack,
                 <a
-                  href="https://hackclub.slack.com/team/U080A3QP42C"
+                  href="https://hackclub.slack.com/team/U08LX7762F7"
                   class="text-green-400 hover:underline transition-all duration-200"
                   >shoot me a message!</a
                 >
-              </p>
-            </div>
-
-            <div
-              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
-            >
-              <h3
-                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
-              >
-                <img
-                  src="/svg/steam.svg"
-                  alt="Steam"
-                  class="h-6 w-6 mr-2 text-green-400"
-                />
-                <span>Steam afficionado</span>
-              </h3>
-              <p class="text-white">
-                I also play other games besides Counter-Strike. I have a
-                <a
-                  href="https://steamcommunity.com/id/3kh0_/"
-                  class="text-green-400 hover:underline transition-all duration-200"
-                  >Steam account</a
-                >
-                with just shy of 800 games and enough hours to shatter reality.
-                Then I have a
-                <a
-                  href="https://steamcommunity.com/id/haha-im-in-your-url-bar"
-                  class="text-green-400 hover:underline transition-all duration-200"
-                  >dedicated account</a
-                >
-                for Counter-Strike where I have clocked in many hours and hold
-                <a
-                  href="https://steamcommunity.com/id/haha-im-in-your-url-bar/inventory/#730"
-                  class="text-green-400 hover:underline transition-all duration-200"
-                  >about $2,359 USD worth of skins</a
-                >
-                at the time of writing
               </p>
             </div>
           </div>
