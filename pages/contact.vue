@@ -24,7 +24,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             
             <a
-              href="https://discord.com/users/1056383394470182922"
+              href="https://discord.com/users/963520338442997850"
               target="_blank"
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
             >
@@ -35,7 +35,7 @@
               />
               <div>
                 <h3 class="text-xl font-medium text-green-400">Discord</h3>
-                <p class="text-gray-300">3kh0</p>
+                <p class="text-gray-300">Chroma</p>
               </div>
             </a>
 
@@ -91,7 +91,7 @@
           </a>
 
           <a
-            href="https://open.spotify.com/user/z3dlpi0cfntezy77ypqi8xass"
+            href="https://open.spotify.com/user/31xvo5f5ezauvla7qccb6ny5roym"
             target="_blank"
             class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
           >
@@ -101,45 +101,6 @@
               class="h-8 w-8 mr-3 text-green-400"
             />
             <span class="text-gray-300">Spotify Profile</span>
-          </a>
-
-          <a
-            href="https://www.twitch.tv/3kh0_live"
-            target="_blank"
-            class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
-          >
-            <img
-              src="/svg/twitch.svg"
-              alt="Twitch"
-              class="h-8 w-8 mr-3 text-green-400"
-            />
-            <span class="text-gray-300">3kh0_live</span>
-          </a>
-
-          <a
-            href="https://old.reddit.com/u/3kh0_reddit/"
-            target="_blank"
-            class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
-          >
-            <img
-              src="/svg/reddit.svg"
-              alt="Reddit"
-              class="h-8 w-8 mr-3 text-green-400"
-            />
-            <span class="text-gray-300">u/3kh0_reddit</span>
-          </a>
-
-          <a
-            href="./files/serious.mp4"
-            target="_blank"
-            class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
-          >
-            <img
-              src="/svg/tiktok.svg"
-              alt="TikTok"
-              class="h-8 w-8 mr-3 text-green-400"
-            />
-            <span class="text-gray-300">@3kh0_online</span>
           </a>
         </div>
 
