@@ -89,7 +89,6 @@
                 I am kinda new to coding, so far I can use AI to make projects and edit other peoples projects. (Hence this website)
               </p>
             </div>
-                >.
           </div>
         </div>
       </section>
