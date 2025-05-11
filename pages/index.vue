@@ -131,7 +131,6 @@
                   >shoot me a message!</a
                 >
               </p>
-            </div>
           </div>
         </div>
       </section>
