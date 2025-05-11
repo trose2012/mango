@@ -22,8 +22,8 @@
               <p
                 class="text-xl leading-relaxed text-white max-w-xl mx-auto md:mx-0"
               >
-                I am a 12 year old web developer, and hacker. I like to make
-                cool things, help out others, and
+                I am a 12 year old web developer and hacker. I like to make
+                cool things, code, and
                 procrastinate.
               </p>
             </div>
@@ -83,10 +83,130 @@
                   alt="Front"
                   class="h-6 w-6 mr-2 flex-shrink-0"
                 />
-                <span>Editing Webpages</span>
+                <span>Little Things</span>
               </h3>
               <p class="text-white">
-                I have gotten good at editing other peoples work and making copies of it, next step is to start making my own work, without AI
+                I am kinda new to coding, so far I can use AI to make projects and edit other peoples projects. (Hence this website)
+                >.
+              </p>
+            </div>
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
+            >
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
+                <img
+                  src="/svg/back.svg"
+                  alt="Back"
+                  class="h-6 w-6 mr-2 flex-shrink-0"
+                />
+                <span>Backend</span>
+              </h3>
+              <p class="text-white">
+                Backend development is not my strong suit, but I still know how
+                to use things like
+                <a
+                  href="https://nodejs.org"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >node.js</a
+                >,
+                <a
+                  href="https://expressjs.com/"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >Express</a
+                >,
+                <a
+                  href="https://supabase.com/"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >Supabase</a
+                >,
+                <a
+                  href="https://mongodb.com/"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >MongoDB</a
+                >, and a few other lesser-known technologies.
+              </p>
+            </div>
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
+            >
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
+                <img
+                  src="/svg/csgo.svg"
+                  alt="CS:GO"
+                  class="h-6 w-6 mr-2 flex-shrink-0"
+                />
+                <span>Counter-Strike</span>
+              </h3>
+              <p class="text-white">
+                My favorite game by far. I sometimes mess with the source engine
+                and
+                <a
+                  href="https://sourcemod.net/"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >SourceMod</a
+                >
+                making mods and plugins for
+                <a
+                  href="https://steamdb.info/app/730/"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >Counter-Strike</a
+                >. Most of these are just for fun, so don't expect them to be
+                public any time soon.
+              </p>
+            </div>
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
+            >
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
+                <img
+                  src="/svg/security.svg"
+                  alt="Shield"
+                  class="h-6 w-6 mr-2 flex-shrink-0"
+                />
+                <span>Sysadmin + Infosec</span>
+              </h3>
+              <p class="text-white">
+                I also have experience with managing
+                <a
+                  href="https://status.3kh0.net/status/3kh0"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >a bunch of servers</a
+                >
+                and setting up things like
+                <a
+                  href="https://nginx.org/"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >nginx</a
+                >,
+                <a
+                  href="https://www.haproxy.org/"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >HAProxy</a
+                >
+                and
+                <a
+                  href="https://squid-cache.org/"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >Squid</a
+                >. Cybersecurity and exploit hunting are fields I am working on
+                getting into. I have a reported a vulnerability to
+                <a
+                  href="https://www.coinbase.com"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >Coinbase</a
+                >
+                with
+                <a
+                  href="https://hackerone.com/3kh0"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >HackerOne</a
+                >.
               </p>
             </div>
           </div>
@@ -102,6 +222,207 @@
           >
             Other Cool Things
           </h1>
+          <div
+            class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 mb-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
+          >
+            <h3
+              class="text-xl font-semibold mb-4 text-green-400 flex items-center"
+            >
+              <img
+                src="/svg/heart.svg"
+                alt="Heart"
+                class="h-6 w-6 mr-2 flex-shrink-0"
+              />
+              <span>Giving back</span>
+            </h3>
+            <p class="text-white mb-4">
+              I am fortunate to be able to do what I love, so I like to give
+              back to groups that help others! I donate to several organizations
+              that promote privacy, security, expression, and freedom. Some of
+              these include:
+            </p>
+            <div class="flex flex-wrap gap-3 mb-4">
+              <a
+                href="https://signal.org"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
+                >Signal Foundation</a
+              >
+              <a
+                href="https://www.accessnow.org/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
+                >AccessNow</a
+              >
+              <a
+                href="https://eff.org/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
+                >Electronic Frontier Foundation</a
+              >
+              <a
+                href="https://torproject.org/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
+                >Tor Project</a
+              >
+              <a
+                href="https://riseup.net/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
+                >Riseup</a
+              >
+              <a
+                href="https://tails.net/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
+                >TailsOS</a
+              >
+              <a
+                href="https://ccs.getmonero.org/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
+                >Monero Project</a
+              >
+              <a
+                href="https://www.amnesty.org/en/tech/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
+                >Amnesty International</a
+              >
+              <a
+                href="https://fightforthefuture.org/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
+                >Fight for the Future</a
+              >
+              <a
+                href="https://cdt.org/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
+                >Center for Democracy and Technology</a
+              >
+              <a
+                href="https://hackclub.com/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
+                >Hack Club</a
+              >
+              <a
+                href="https://nothingtohide.nl/"
+                class="inline-block px-3 py-1 bg-black/40 border border-green-500/20 rounded-full text-white text-sm transition-all duration-200 hover:bg-green-500/20 hover:no-underline"
+                >N0TH1NG T0 H1D3</a
+              >
+            </div>
+            <p class="text-white">
+              I also run/sponsor several Tor and Monero nodes for the public and
+              I donate to
+              <a
+                href="https://github.com/3kh0?tab=sponsoring"
+                class="text-green-400 hover:underline transition-all duration-200"
+                >developers that contribute valuable software to the world</a
+              >!
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
+            >
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
+                <img
+                  src="/svg/tail.svg"
+                  alt="Fox tail"
+                  class="h-6 w-6 mr-2 flex-shrink-0"
+                />
+                <span>Ooo fluffy!</span>
+              </h3>
+              <p class="text-white">
+                I also happen to be a furry! I know, yet another person in tech
+                who is a furry, how original. My fursona is a silly little fox
+                boy with three to five tails (random to keep it spicy!) If you'd
+                like to learn more and see art of him by amazing human artists,
+                check out my
+                <a
+                  href="https://extra.3kh0.net/fursona"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >fursona page</a
+                >!
+              </p>
+            </div>
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
+            >
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
+                <img
+                  src="/svg/pencil.svg"
+                  alt="Pencil"
+                  class="h-6 w-6 mr-2 flex-shrink-0"
+                />
+                <span>Certified yapper</span>
+              </h3>
+              <p class="text-white">
+                I recently started a blog to share my thoughts and ideas with
+                the world. I write about a variety of topics including
+                technology, politics, personal experiences, and whatever else
+                comes to mind. If you are interested in reading my blog, you can
+                find it at
+                <a
+                  href="https://blog.3kh0.net"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >blog.3kh0.net</a
+                >
+                RSS included!
+              </p>
+            </div>
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
+            >
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
+                <img
+                  src="/svg/lang.svg"
+                  alt="Languages"
+                  class="h-6 w-6 mr-2 flex-shrink-0"
+                />
+                <span>你好! / Привет!</span>
+              </h3>
+              <p class="text-white">
+                I also speak a few languages. I am fluent in English and
+                conversational in Chinese and Russian. More so in Chinese, as I
+                have my family to thank for that. I have picked up basic Russian
+                from friends and Counter-Strike which is only the more
+                "colorful" side, but a language is a language.
+              </p>
+            </div>
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
+            >
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
+                <img
+                  src="/svg/coin.svg"
+                  alt="Coin"
+                  class="h-6 w-6 mr-2 flex-shrink-0"
+                />
+                <span>Cryptocurrency trader</span>
+              </h3>
+              <p class="text-white">
+                Back when
+                <a
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  href="https://localmonero.co/"
+                  >LocalMonero</a
+                >
+                was a thing, I used to trade Monero. I have since moved to
+                <a
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  href="https://localcoinswap.com/"
+                  >LocalCoinSwap</a
+                >
+                and I pride myself in offering competitive rates and best in
+                class service, as shown by
+                <a
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  href="https://localcoinswap.com/profile/3kh0_"
+                  >my 5 star rating with over $30,000 traded</a
+                >, when I open my trades, stock is quick to go out.
+              </p>
+            </div>
             <div
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
             >
@@ -126,17 +447,54 @@
                 them and I have to thank them for the unintended levels of
                 motivation they have given me. If you are on the Slack,
                 <a
-                  href="https://hackclub.slack.com/team/U08LX7762F7"
+                  href="https://hackclub.slack.com/team/U080A3QP42C"
                   class="text-green-400 hover:underline transition-all duration-200"
                   >shoot me a message!</a
                 >
+              </p>
+            </div>
+
+            <div
+              class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30"
+            >
+              <h3
+                class="text-xl font-semibold mb-3 text-green-400 flex items-center"
+              >
+                <img
+                  src="/svg/steam.svg"
+                  alt="Steam"
+                  class="h-6 w-6 mr-2 text-green-400"
+                />
+                <span>Steam afficionado</span>
+              </h3>
+              <p class="text-white">
+                I also play other games besides Counter-Strike. I have a
+                <a
+                  href="https://steamcommunity.com/id/3kh0_/"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >Steam account</a
+                >
+                with just shy of 800 games and enough hours to shatter reality.
+                Then I have a
+                <a
+                  href="https://steamcommunity.com/id/haha-im-in-your-url-bar"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >dedicated account</a
+                >
+                for Counter-Strike where I have clocked in many hours and hold
+                <a
+                  href="https://steamcommunity.com/id/haha-im-in-your-url-bar/inventory/#730"
+                  class="text-green-400 hover:underline transition-all duration-200"
+                  >about $2,359 USD worth of skins</a
+                >
+                at the time of writing
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <IndexReviews><IndexReviews />
+      <IndexReviews />
 
       <section id="final" class="py-16 mb-60">
         <div
@@ -186,7 +544,7 @@ onMounted(() => {
         }
       });
     },
-    { threshold: 0.1 },
+    { threshold: 0.1 }
   );
 
   document
