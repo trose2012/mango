@@ -110,12 +110,12 @@
 <script setup>
 const projects = [
   {
-    name: "HCBScan",
+    name: "Sus",
     image: "/img/b23f69dc-9345-46e8-a1b2-abc6321b4bc3.png",
-    desc: "HCBScan is an explorer for HCB that allows you to search for organizations, view transactions, and explore public financial data.",
-    tech: ["JavaScript", "Vue", "Supabase", "TailwindCSS"],
-    git: "https://github.com/3kh0/hcbscan",
-    demo: "https://hcbscan.3kh0.net/app",
+    desc: "You'll just have to find out... (THIS WAS NOT MADE BY ME, IT WAS MADE BY 3kh0",
+    tech: ["HTML", "CSS"],
+    git: "https://github.com/trose2012/sus",
+    demo: "https://trose2012.github.io/sus/",
   },
   {
     name: "Echo net extras",
