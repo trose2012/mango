@@ -112,7 +112,7 @@ const projects = [
   {
     name: "Sus",
     image: "/img/b23f69dc-9345-46e8-a1b2-abc6321b4bc3.png",
-    desc: "You'll just have to find out... (THIS WAS NOT MADE BY ME, IT WAS MADE BY 3kh0",
+    desc: "ℹ️ This was made by 3kh0, not me ℹ️",
     tech: ["HTML", "CSS"],
     git: "https://github.com/trose2012/sus",
     demo: "https://trose2012.github.io/sus/",
