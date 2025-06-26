@@ -43,34 +43,34 @@
 <script setup>
 const reviews = [
   {
-    name: "RJTHEBOSS on LocalCoinSwap",
+    name: "You Guys can fill up this section",
     pfp: "/img/lcs_default.png",
-    msg: "Such an honest guy. He really trust people and have a lot patience really glad to find him to trade",
+    msg: "Write a review or say something good about me in an email to 30roset@gjps.org to get yourself added into the reviews.",
   },
   {
-    name: "Firepup Sixfifty",
+    name: "Template",
     pfp: "/img/firepup.png",
-    msg: "3kh0's cool tbh :3 Like they're genuinely nice to talk to and hang out with, highly recommend just yapping to them sometime :3",
+    msg: "Template",
   },
   {
-    name: "shokz",
+    name: "Template",
     pfp: "/img/shokz.png",
-    msg: "He is an awesome exchanger with low fees and fast to work with, thank you so much!",
+    msg: "Template",
   },
   {
-    name: "Franz",
+    name: "Template",
     pfp: "/img/franz.png",
-    msg: "There are very few people that you can trust fully in life, and he is definitely on the list as a business partner and a friend <3",
+    msg: "Template",
   },
   {
-    name: "Deployer",
+    name: "Template",
     pfp: "/img/deployer.png",
-    msg: "Echo is such a cool guy! He’s incredibly caring, he even donated a dollar to me! :3 He’s super helpful and truly seems like an amazing developer. The projects he creates always work so well, and I'm constantly impressed by how bug-free they are!",
+    msg: "Template",
   },
   {
-    name: "Suya",
+    name: "Template",
     pfp: "/img/suya.png",
-    msg: "A \"slightly\" privacy obsessed gay furry nerd. That doesn\'t narrow it down whatsoever, but it does mean he\'s cool (which is is indeed :3)",
+    msg: "Template",
   },
 ];
 </script>
