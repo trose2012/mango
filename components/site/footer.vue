@@ -41,7 +41,7 @@
               </a>
             </p>
             <p class="flex items-center justify-center gap-1">
-              A bunch of credit to 3kh0.
+              This website was originally made by 3kh0 — not me. You should check him out at 3kh0.net; he’s a great guy and a way better coder. I just made a few edits to this site.
             </p>
             <p class="flex items-center justify-center gap-1">
               Dedicated to the friends that have fallen and the ones that
