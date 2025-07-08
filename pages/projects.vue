@@ -109,13 +109,13 @@
 
 <script setup>
 const projects = [
-  {
-    name: "Sus",
-    image: "/img/b23f69dc-9345-46e8-a1b2-abc6321b4bc3.png",
-    desc: "ℹ️ This was made by 3kh0, not me.",
-    tech: ["HTML", "CSS", "JS"],
-    git: "https://github.com/trose2012/sus",
-    demo: "https://trose2012.github.io/sus/",
+    {
+    name: "Personal Website",
+    image: "/img/Screenshot 2025-07-08 094559.png",
+    desc: "My first actuall website made by me!",
+    tech: ["HTML", "CSS"],
+    git: "https://github.com/trose2012/personal-website",
+    demo: "https://trose2012.github.io/personal-website/",
   },
 ];
 
