@@ -40,7 +40,7 @@
             </a>
 
             <a
-              href="mailto:trosecoder@gmail.com"
+              href="mailto:theo.c.rose@gmail.com"
               target="_blank"
               class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
             >
@@ -51,7 +51,7 @@
               />
               <div>
                 <h3 class="text-xl font-medium text-green-400">Email</h3>
-                <p class="text-gray-300">trosecoder@gmail.com</p>
+                <p class="text-gray-300">theo.c.rose@gmail.com</p>
               </div>
             </a>
           </div>
@@ -91,7 +91,7 @@
           </a>
 
           <a
-            href="https://open.spotify.com/user/31xvo5f5ezauvla7qccb6ny5roym"
+            href="https://open.spotify.com/user/31ejaxfv5blkvco7pb3x2ebl52j4"
             target="_blank"
             class="bg-black/40 backdrop-blur-[3px] rounded-xl border border-green-500/15 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-black/50 hover:border-green-500/30 flex items-center"
           >
