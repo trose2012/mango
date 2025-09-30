@@ -17,12 +17,12 @@
               <h1
                 class="text-5xl md:text-6xl font-bold text-green-400 [text-shadow:0_0_10px_rgba(34,197,94,0.8)]"
               >
-                Hi, I am Chroma!
+                Hi, I am Theo!
               </h1>
               <p
                 class="text-xl leading-relaxed text-white max-w-xl mx-auto md:mx-0"
               >
-                I am a 12 year old web developer and hacker. I like to make
+                I am a 13 year old web developer and hacker. I like to make
                 cool things, code, and
                 procrastinate.
               </p>
@@ -33,7 +33,7 @@
               ></div>
               <img
                 src="~/assets/media/splash.png"
-                alt="echo profile picture"
+                alt="theo profile picture"
                 class="relative w-64 h-64 rounded-full border-5 border-green-500 border-opacity-30 object-cover"
               />
             </div>
@@ -83,10 +83,10 @@
                   alt="Front"
                   class="h-6 w-6 mr-2 flex-shrink-0"
                 />
-                <span>Little Things</span>
+                <span>Basic HTML and CSS</span>
               </h3>
               <p class="text-white">
-                I am kinda new to coding, so far I can use AI to make projects and edit other peoples projects. (Hence this website)
+                I am currently working on some basic HTML and CSS stuff on FreeCodeCamp.
               </p>
             </div>
           </div>
